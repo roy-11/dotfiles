@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.alias: bash/alias
+    ~/.zprofile: zsh/zprofile
+
+- shell:
+    - command: ./setup_homebrew.sh
+      stdout: true
+      stderr: true
