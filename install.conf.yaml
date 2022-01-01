@@ -10,3 +10,6 @@
     - command: ./setup_homebrew.sh
       stdout: true
       stderr: true
+    - command: ./setup_screenshots.sh
+      stdout: true
+      stderr: true
