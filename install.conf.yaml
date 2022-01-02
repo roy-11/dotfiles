@@ -16,3 +16,6 @@
     - command: ./setup_macos.sh
       stdout: true
       stderr: true
+    - command: ./setup_node.sh
+      stdout: true
+      stderr: true

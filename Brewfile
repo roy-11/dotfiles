@@ -14,6 +14,8 @@ brew "git"
 brew "mas"
 # Improved JPEG encoder
 brew "mozjpeg"
+# Manage multiple NodeJS versions
+brew "nodenv"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 cask "font-ricty-diminished"

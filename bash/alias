@@ -19,6 +19,9 @@ alias desk='cd ~/Desktop'
 alias allps='ps aux'
 alias du1='du -d 1'
 
+# homebrew
+alias bbd='brew bundle dump --force --describe'
+
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias delss='find ~/Screenshots -type f -name "スクリーン*" -print0 | xargs -0 rm'
