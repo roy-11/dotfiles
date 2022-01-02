@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-# *Findler関連
+# *Finder関連
 defaults write com.apple.finder ShowPathbar -bool true # パスを表示
 defaults write com.apple.finder ShowStatusBar -bool true    # ステータスバーを表示
 defaults write com.apple.finder ShowTabView -bool true    # タブバーを表示
