@@ -5,6 +5,9 @@
 - link:
     ~/.alias: bash/alias
     ~/.zprofile: zsh/zprofile
+    ~/.config/fish/config.fish:
+      create: true
+      path: fish/config.fish
 
 - shell:
     - command: ./setup_homebrew.sh
