@@ -10,6 +10,6 @@
     - command: ./setup_homebrew.sh
       stdout: true
       stderr: true
-    - command: ./setup_screenshots.sh
+    - command: ./setup_macos.sh
       stdout: true
       stderr: true
