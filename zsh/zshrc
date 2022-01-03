@@ -1,0 +1,5 @@
+# homebrew setup_homebrewで必要
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# nodenv setup_nodeで必要
+eval "$(nodenv init -)"

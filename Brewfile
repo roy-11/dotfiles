@@ -16,8 +16,13 @@ brew "mas"
 brew "mozjpeg"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Simplistic interactive filtering tool
+brew "peco"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Web browser
 cask "google-chrome"

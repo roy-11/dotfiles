@@ -4,18 +4,24 @@
 
 - link:
     ~/.alias: bash/alias
-    ~/.zprofile: zsh/zprofile
+    ~/.zshrc: zsh/zshrc
     ~/.config/fish/config.fish:
       create: true
       path: fish/config.fish
+    ~/.config/fish/functions/fish_user_key_bindings.fish:
+      create: true
+      path: fish/functions/fish_user_key_bindings.fish
 
 - shell:
     - command: ./setup_homebrew.sh
       stdout: true
       stderr: true
-    - command: ./setup_macos.sh
+    - command: ./setup_fish.sh
       stdout: true
       stderr: true
     - command: ./setup_node.sh
+      stdout: true
+      stderr: true
+    - command: ./setup_macos.sh
       stdout: true
       stderr: true

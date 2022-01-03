@@ -22,3 +22,6 @@ npm install -g yarn
 
 echo "Global NPM Packages Installed:"
 npm list -g --depth=0
+
+# 設定反映
+nodenv rehash

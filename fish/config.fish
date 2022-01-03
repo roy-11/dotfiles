@@ -8,5 +8,6 @@ eval (/opt/homebrew/bin/brew shellenv)
 eval (nodenv init - | source)
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    # starship
+    starship init fish | source
 end
