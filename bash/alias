@@ -22,6 +22,10 @@ alias du1='du -d 1'
 # homebrew
 alias bbd='brew bundle dump --force --describe'
 
+# jman
+alias man='env LANG=en_US.UTF-8 man'
+alias jman='env LANG=ja_JP.UTF-8 man'
+
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias delss='find ~/Screenshots -type f -name "スクリーン*" -print0 | xargs -0 rm'
