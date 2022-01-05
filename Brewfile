@@ -22,11 +22,15 @@ brew "peco"
 brew "starship"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Voice and text chat software
+cask "discord"
 cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Web browser
 cask "google-chrome"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Team communication and collaboration software
+cask "slack"
 # Open-source code editor
 cask "visual-studio-code"
