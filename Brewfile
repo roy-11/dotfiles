@@ -18,6 +18,8 @@ brew "mozjpeg"
 brew "nodenv"
 # Simplistic interactive filtering tool
 brew "peco"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Password manager that keeps all passwords secure behind one password

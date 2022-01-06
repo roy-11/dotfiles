@@ -27,10 +27,10 @@ else
 fi
 
 # 日本語訳のインストール
-cd ~/Downloads
+cd ~/Downloads || exit
 curl -O http://linuxjm.osdn.jp/man-pages-ja-20211215.tar.gz
 tar xfz man-pages-ja-20211215.tar.gz
-cd man-pages-ja-20211215
+cd man-pages-ja-20211215 || exit
 make config
 make install
 
