@@ -30,6 +30,8 @@ cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Web browser
 cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Interface for reading and syncing eBooks
 cask "kindle"
 # Team communication and collaboration software
