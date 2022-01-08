@@ -3,7 +3,8 @@
       relink: true
 
 - link:
-    ~/.alias: bash/alias
+    ~/.aliases: common/aliases
+    ~/.variables: common/variables
     ~/.zshrc: zsh/zshrc
     ~/.config/fish/config.fish:
       create: true

@@ -1,3 +1,7 @@
+# 共通設定
+source ~/.aliases
+source ~/.variables
+
 # homebrew setup_homebrewで必要
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

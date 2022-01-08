@@ -7,13 +7,12 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='git log --oneline -5'
 
-# zsh
-alias srczsh='source ~/.zshrc'
-alias zshrc='vim ~/.zshrc'
-
 # cd
 alias app='cd ~/App'
 alias desk='cd ~/Desktop'
+
+# open or edit file
+alias dotf='code ~/.dotfiles'
 
 # pc
 alias allps='ps aux'

@@ -1,5 +1,6 @@
-# 共通alias
-source ~/.alias
+# 共通設定
+source ~/.aliases
+source ~/.variables
 
 # homebrew
 eval (/opt/homebrew/bin/brew shellenv)
