@@ -12,6 +12,7 @@
     ~/.config/fish/functions/fish_user_key_bindings.fish:
       create: true
       path: fish/functions/fish_user_key_bindings.fish
+    ~/.gitconfig:
 
 - shell:
     - command: ./setup_homebrew.sh
