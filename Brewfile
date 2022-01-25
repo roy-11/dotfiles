@@ -25,6 +25,8 @@ brew "peco"
 brew "shellcheck"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Tool to build, change, and version infrastructure
+brew "terraform"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Voice and text chat software
