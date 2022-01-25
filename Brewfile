@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -26,6 +27,8 @@ brew "starship"
 cask "1password"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
 cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Web browser
@@ -36,5 +39,11 @@ cask "iterm2"
 cask "kindle"
 # Team communication and collaboration software
 cask "slack"
+# Development environment
+cask "vagrant"
+# Gives Vagrant VMware plugin access to various VMware functionalities
+cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
+# Create, manage, and run virtual machines
+cask "vmware-fusion-tech-preview"
