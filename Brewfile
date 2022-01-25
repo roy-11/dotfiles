@@ -13,6 +13,8 @@ brew "fish"
 brew "git"
 # Mac App Store command-line interface
 brew "mas"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
 # Manage multiple NodeJS versions
