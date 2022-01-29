@@ -3,6 +3,7 @@
       relink: true
 
 - link:
+    # shell
     ~/.aliases: common/aliases
     ~/.variables: common/variables
     ~/.zshrc: zsh/zshrc
@@ -12,7 +13,14 @@
     ~/.config/fish/functions/fish_user_key_bindings.fish:
       create: true
       path: fish/functions/fish_user_key_bindings.fish
+    # others
     ~/.gitconfig:
+    ~/.config/nvim/init.vim:
+      create: true
+      path: app/nvim/init.vim
+    ~/.tmux.conf:
+      create: true
+      path: app/tmux/tmux.conf
 
 - shell:
     - command: ./setup_homebrew.sh

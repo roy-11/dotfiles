@@ -9,6 +9,8 @@ brew "bat"
 brew "exa"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Distributed revision control system
 brew "git"
 # Mac App Store command-line interface
@@ -17,6 +19,8 @@ brew "mas"
 brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Manage multiple NodeJS versions
 brew "nodenv"
 # Simplistic interactive filtering tool
@@ -27,6 +31,8 @@ brew "shellcheck"
 brew "starship"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Terminal multiplexer
+brew "tmux"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Voice and text chat software

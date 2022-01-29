@@ -25,6 +25,17 @@ alias bbd='brew bundle dump --force --describe'
 alias man='env LANG=en_US.UTF-8 man'
 alias jman='env LANG=ja_JP.UTF-8 man'
 
+# neovim
+alias vi='nvim'
+alias vim='nvim'
+alias view='nvim -R'
+alias vimi='nvim ~/.config/nvim/init.vim'
+
+# tmux
+alias tl='tmux ls'
+alias ta='tmux a'
+alias tk='tmux kill-server'
+
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias delss='find ~/Screenshots -type f -name "スクリーン*" -print0 | xargs -0 rm'
