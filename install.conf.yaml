@@ -15,6 +15,7 @@
       path: fish/functions/fish_user_key_bindings.fish
     # others
     ~/.gitconfig:
+    ~/.gitignore_global:
     ~/.config/nvim/init.vim:
       create: true
       path: app/nvim/init.vim

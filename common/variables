@@ -1,2 +1,5 @@
 # manのハイライト
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# Rust envパス
+export PATH="$HOME/.cargo/bin:$PATH"
