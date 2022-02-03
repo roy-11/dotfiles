@@ -13,6 +13,8 @@ brew "fish"
 brew "fzf"
 # Distributed revision control system
 brew "git"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Mac App Store command-line interface
 brew "mas"
 # Run a Kubernetes cluster locally
@@ -45,8 +47,14 @@ cask "font-ricty-diminished"
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Plays sound effects as you type
+cask "jazzup"
 # Interface for reading and syncing eBooks
 cask "kindle"
+# Preview and audit Kindle eBooks
+cask "kindle-previewer"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
 # Development environment
