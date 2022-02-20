@@ -34,10 +34,14 @@ mkdir -p "$HOME/Screenshots" # フォルダを作成
 defaults write com.apple.screencapture location "$HOME/Screenshots" # 作成したフォルダに保存
 defaults write com.apple.screencapture type jpg # デフォルトのpngからjpgにする
 
+# *その他
+defaults write com.apple.PowerChime ChimeOnNoHardware -bool true; # 充電時の音をミュートにする
+
 # 手動実行
 # sudo nvram StartupMute=%01 起動音をミュートにする
 
 # 再起動
+killall PowerChime
 killall Finder
 killall Dock
 killall SystemUIServer

@@ -37,6 +37,12 @@ brew "terraform"
 brew "tmux"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Memory training application
+cask "anki"
+# IDE for C, C++, PHP and Node.js
+cask "codelite"
+# Trains AIs to understand and translate texts
+cask "deepl"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
@@ -45,6 +51,8 @@ cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Plays sound effects as you type
@@ -65,3 +73,6 @@ cask "vagrant-vmware-utility"
 cask "visual-studio-code"
 # Create, manage, and run virtual machines
 cask "vmware-fusion-tech-preview"
+# Video communication and virtual meeting platform
+cask "zoom"
+
