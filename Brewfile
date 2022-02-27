@@ -57,6 +57,8 @@ cask "google-drive"
 cask "iterm2"
 # Plays sound effects as you type
 cask "jazzup"
+# Keyboard customizer
+cask "karabiner-elements"
 # Interface for reading and syncing eBooks
 cask "kindle"
 # Preview and audit Kindle eBooks
@@ -75,4 +77,3 @@ cask "visual-studio-code"
 cask "vmware-fusion-tech-preview"
 # Video communication and virtual meeting platform
 cask "zoom"
-

@@ -22,6 +22,9 @@
     ~/.tmux.conf:
       create: true
       path: app/tmux/tmux.conf
+    ~/.config/karabiner:
+      create: true
+      path: app/karabiner
 
 - shell:
     - command: ./setup_homebrew.sh
