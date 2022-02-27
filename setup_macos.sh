@@ -39,6 +39,7 @@ defaults write com.apple.PowerChime ChimeOnNoHardware -bool true; # 充電時の
 
 # 手動実行
 # sudo nvram StartupMute=%01 起動音をミュートにする
+# vimacインストール https://github.com/dexterleng/vimac
 
 # 再起動
 killall PowerChime
