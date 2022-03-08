@@ -77,3 +77,9 @@ cask "visual-studio-code"
 cask "vmware-fusion-tech-preview"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "ComicViewer", id: 1455702185
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
