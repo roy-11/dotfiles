@@ -5,6 +5,8 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Console Matrix
+brew "cmatrix"
 # Modern replacement for 'ls'
 brew "exa"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -37,8 +39,14 @@ brew "terraform"
 brew "tmux"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Application launcher and productivity software
+cask "alfred"
 # Memory training application
 cask "anki"
+# Tool to customize input devices and automate computer systems
+cask "bettertouchtool"
+# Tool to remove unnecessary files and folders from disk
+cask "cleanmymac"
 # IDE for C, C++, PHP and Node.js
 cask "codelite"
 # Trains AIs to understand and translate texts
@@ -63,6 +71,8 @@ cask "karabiner-elements"
 cask "kindle"
 # Preview and audit Kindle eBooks
 cask "kindle-previewer"
+# Calculator and converter application
+cask "numi"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Team communication and collaboration software
