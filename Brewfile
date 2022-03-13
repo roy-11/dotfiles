@@ -25,10 +25,14 @@ brew "minikube"
 brew "mozjpeg"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Install NodeJS versions
+brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
 # Simplistic interactive filtering tool
 brew "peco"
+# General-purpose scripting language
+brew "php"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts
