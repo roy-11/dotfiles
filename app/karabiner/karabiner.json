@@ -275,11 +275,11 @@
                         ]
                     },
                     {
-                        "description": "操作スペースの移動(fn + y,u,i)",
+                        "description": "操作スペースの移動(fn + i,p)",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "u",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
@@ -304,7 +304,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
@@ -320,31 +320,6 @@
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "y",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "caps_lock",
-                                            "command",
-                                            "option",
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
                                         "modifiers": [
                                             "control"
                                         ]
@@ -355,11 +330,11 @@
                         ]
                     },
                     {
-                        "description": "操作スペースの移動(ctrl + y,u,i)",
+                        "description": "操作スペースの移動(ctrl + i,p)",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "u",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
@@ -385,7 +360,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
@@ -402,32 +377,6 @@
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "y",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "caps_lock",
-                                            "command",
-                                            "option",
-                                            "shift",
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
                                         "modifiers": [
                                             "control"
                                         ]
