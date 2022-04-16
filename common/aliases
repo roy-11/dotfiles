@@ -19,7 +19,7 @@ alias allps='ps aux'
 alias du1='du -d 1'
 
 # homebrew
-alias bbd='brew bundle dump --force --describe'
+alias bbd='brew bundle dump --force --describe --mas'
 
 # jman
 alias man='env LANG=en_US.UTF-8 man'

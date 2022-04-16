@@ -49,6 +49,8 @@ cask "alfred"
 cask "anki"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # IDE for C, C++, PHP and Node.js
