@@ -61,6 +61,8 @@ cask "deepl"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Web browser
+cask "firefox"
 cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Web browser
