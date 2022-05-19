@@ -45,6 +45,8 @@ brew "tmux"
 cask "1password"
 # Application launcher and productivity software
 cask "alfred"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Memory training application
 cask "anki"
 # Tool to customize input devices and automate computer systems
@@ -79,6 +81,8 @@ cask "karabiner-elements"
 cask "kindle"
 # Preview and audit Kindle eBooks
 cask "kindle-previewer"
+# Visual tool to design, develop and administer MySQL servers
+cask "mysqlworkbench"
 # Calculator and converter application
 cask "numi"
 # Move and resize windows using keyboard shortcuts or snap areas
