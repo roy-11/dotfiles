@@ -71,6 +71,8 @@ cask "font-ricty-diminished"
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
+# Utility to hide menu bar items
+cask "hiddenbar"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Plays sound effects as you type
