@@ -102,6 +102,7 @@ cask "vmware-fusion-tech-preview"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "ComicViewer", id: 1455702185
+mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
