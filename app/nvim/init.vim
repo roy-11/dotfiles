@@ -1,5 +1,5 @@
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set textwidth=0
 set autoindent
@@ -15,6 +15,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tmsvg/pear-tree' "括弧補完
 call plug#end()
 
 "" vim-airline
@@ -28,3 +29,9 @@ let g:airline_theme = 'codedark'
 " Plug 'lambdalisue/fern.vim'
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * ++nested Fern -drawer %:h | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
+"" スニペット設定
+" 手動vimコマンド: CocInstall coc-snippets
+" https://github.com/neoclide/coc-snippets
+" python3 -m pip install --user --upgrade pynvim
+" https://github.com/neoclide/coc-snippets/issues/196
