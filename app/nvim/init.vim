@@ -4,7 +4,7 @@ set expandtab
 set textwidth=0
 set autoindent
 set hlsearch
-set clipboard=unnamed
+set clipboard=unnamedplus
 set number
 syntax on
 
