@@ -16,6 +16,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tmsvg/pear-tree' "括弧補完
+Plug 'terryma/vim-multiple-cursors' "複数選択・マルチカーソル
 call plug#end()
 
 "" vim-airline
