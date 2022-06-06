@@ -15,16 +15,35 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdtree' "ファイラー
+Plug 'Xuyuanp/nerdtree-git-plugin' "nerdtreeにgit statusを追加
+Plug 'ryanoasis/vim-devicons' "プラグインにアイコン追加
 Plug 'tmsvg/pear-tree' "括弧補完
 Plug 'terryma/vim-multiple-cursors' "複数選択・マルチカーソル
+Plug 'airblade/vim-gitgutter' "左端の差分表示
+Plug 'tpope/vim-fugitive' "vimコマンドのgit機能
 call plug#end()
 
 "" vim-airline
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1 "tabを有効にする
+let g:airline#extensions#tabline#buffer_idx_mode = 1 "タブに番号を表示
+nmap gT <Plug>AirlineSelectPrevTab
+nmap gt <Plug>AirlineSelectNextTab
 
 "" vim-code-dark(テーマ)
 colorscheme codedark
 let g:airline_theme = 'codedark'
+
+"" vim-gitgutter(左端の差分表示)
+set signcolumn=yes "常に表示
+set updatetime=100 "100ms更新
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3 
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+""NERDTree
+nnoremap <C-t> :NERDTreeToggle<CR>
+let g:NERDTreeGitStatusUseNerdFonts = 1 "追加したgit statusにアイコンを使用
 
 "" fern(ファイラー)
 " Plug 'lambdalisue/fern.vim'
