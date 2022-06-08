@@ -91,6 +91,8 @@ cask "numi"
 cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
+# To-do & task list manager
+cask "ticktick"
 # Development environment
 cask "vagrant"
 # Gives Vagrant VMware plugin access to various VMware functionalities

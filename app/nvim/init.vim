@@ -6,6 +6,7 @@ set autoindent
 set hlsearch
 set clipboard=unnamedplus
 set number
+set mouse=a
 syntax on
 
 call plug#begin()
@@ -22,7 +23,11 @@ Plug 'tmsvg/pear-tree' "括弧補完
 Plug 'terryma/vim-multiple-cursors' "複数選択・マルチカーソル
 Plug 'airblade/vim-gitgutter' "左端の差分表示
 Plug 'tpope/vim-fugitive' "vimコマンドのgit機能
+Plug 'junegunn/goyo.vim'
 call plug#end()
+
+"" fzf
+nnoremap <C-p> :FZF<CR>
 
 "" vim-airline
 let g:airline#extensions#tabline#enabled = 1 "tabを有効にする
