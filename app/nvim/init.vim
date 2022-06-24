@@ -1,21 +1,21 @@
-set shiftwidth=2
-set tabstop=2
-set expandtab
-set textwidth=0
-set autoindent
-set hlsearch
-set clipboard=unnamedplus
-set number
-set mouse=a
+set shiftwidth=2 "インデント文字数
+set tabstop=2 "タブの大きさ
+set expandtab "タブをスペースに変換
+set textwidth=0 "自動改行しない
+set autoindent "改行時に自動インデント（現在行のインデントキープ）
+set hlsearch "検索結果をハイライト
+set clipboard=unnamedplus "コピー内容をクリップボードと連携
+set number "行数を表示
+set mouse=a "マウスでカーソル移動
 syntax on
 
 call plug#begin()
-Plug 'tomasiser/vim-code-dark'
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'tomasiser/vim-code-dark' "テーマ
+Plug 'junegunn/fzf.vim' "fzfをvimで使用
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "fzfをvimで使用
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "LSPプラグイン
+Plug 'vim-airline/vim-airline' "ステータスバー
+Plug 'vim-airline/vim-airline-themes' "vim-airlineのテーマ
 Plug 'preservim/nerdtree' "ファイラー
 Plug 'Xuyuanp/nerdtree-git-plugin' "nerdtreeにgit statusを追加
 Plug 'ryanoasis/vim-devicons' "プラグインにアイコン追加
@@ -23,8 +23,11 @@ Plug 'tmsvg/pear-tree' "括弧補完
 Plug 'terryma/vim-multiple-cursors' "複数選択・マルチカーソル
 Plug 'airblade/vim-gitgutter' "左端の差分表示
 Plug 'tpope/vim-fugitive' "vimコマンドのgit機能
-Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim' "zenモード
 call plug#end()
+
+"" space+enterで空行を追加する
+noremap <Space><CR> O<ESC>
 
 "" fzf
 nnoremap <C-p> :FZF<CR>
