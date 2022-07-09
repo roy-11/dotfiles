@@ -24,6 +24,7 @@ Plug 'terryma/vim-multiple-cursors' "複数選択・マルチカーソル
 Plug 'airblade/vim-gitgutter' "左端の差分表示
 Plug 'tpope/vim-fugitive' "vimコマンドのgit機能
 Plug 'junegunn/goyo.vim' "zenモード
+Plug 'editorconfig/editorconfig-vim' "Editorconfigプラグイン
 call plug#end()
 
 "" space+enterで空行を追加する
@@ -51,6 +52,7 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 ""NERDTree
 nnoremap <C-t> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1 "dotfileを表示する
 let g:NERDTreeGitStatusUseNerdFonts = 1 "追加したgit statusにアイコンを使用
 
 "" fern(ファイラー)
