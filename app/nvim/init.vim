@@ -25,6 +25,7 @@ Plug 'airblade/vim-gitgutter' "左端の差分表示
 Plug 'tpope/vim-fugitive' "vimコマンドのgit機能
 Plug 'junegunn/goyo.vim' "zenモード
 Plug 'editorconfig/editorconfig-vim' "Editorconfigプラグイン
+Plug 'tpope/vim-commentary' " gccでコメント
 call plug#end()
 
 "" space+enterで空行を追加する
