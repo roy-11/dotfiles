@@ -83,6 +83,8 @@ cask "karabiner-elements"
 cask "kindle"
 # Preview and audit Kindle eBooks
 cask "kindle-previewer"
+# Explore and manipulate your MongoDB data
+cask "mongodb-compass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
 # Calculator and converter application
