@@ -26,6 +26,9 @@ Plug 'tpope/vim-fugitive' "vimコマンドのgit機能
 Plug 'junegunn/goyo.vim' "zenモード
 Plug 'editorconfig/editorconfig-vim' "Editorconfigプラグイン
 Plug 'tpope/vim-commentary' " gccでコメント
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] } " フォーマット
 call plug#end()
 
 "" space+enterで空行を追加する
@@ -66,3 +69,10 @@ let g:NERDTreeGitStatusUseNerdFonts = 1 "追加したgit statusにアイコン�
 " https://github.com/neoclide/coc-snippets
 " python3 -m pip install --user --upgrade pynvim
 " https://github.com/neoclide/coc-snippets/issues/196
+
+" prettier フォーマット ファイルが保存される前 
+augroup fmt
+autocmd!
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
+augroup END
+
