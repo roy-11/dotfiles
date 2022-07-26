@@ -15,6 +15,8 @@ brew "fish"
 brew "fzf"
 # Distributed revision control system
 brew "git"
+# Perceptual JPEG encoder
+brew "guetzli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -73,6 +75,8 @@ cask "google-chrome"
 cask "google-drive"
 # Utility to hide menu bar items
 cask "hiddenbar"
+# Tool to optimize images to a smaller size
+cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Plays sound effects as you type
