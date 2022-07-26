@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "bytesguy/ubuntu-server-21.10-arm64"
+  config.vm.box = "bytesguy/ubuntu-server-20.04-arm64"
   config.vm.box_version = "1.0.0"
 
   # Disable automatic box update checking. If you disable this, then
@@ -69,15 +69,13 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # SHELL
 
+  # hang issue https://github.com/hashicorp/vagrant/issues/12695
   config.vm.provider :vmware_desktop do |vmware|
-    # Display the VirtualBox GUI when booting the machine
-    vmware.gui = false
-    # Customize the amount of memory on the VM:
-    vmware.memory = "4096"
+    vmware.gui = false # Display the VirtualBox GUI when booting the machine
+    vmware.memory = "4096" # Customize the amount of memory on the VM:
     vmware.whitelist_verified = true
     vmware.ssh_info_public = true
-    # Warning対応
-    vmware.vmx["ethernet0.pcislotnumber"] = "33"
+    vmware.allowlist_verified = true
   end
 
 end
