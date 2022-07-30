@@ -1,5 +1,7 @@
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
@@ -43,6 +45,8 @@ brew "starship"
 brew "terraform"
 # Terminal multiplexer
 brew "tmux"
+# Everything you need to get started with Heroku
+brew "heroku/brew/heroku"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application launcher and productivity software
@@ -69,6 +73,8 @@ cask "docker"
 cask "firefox"
 cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
+# Free and open-source image editor
+cask "gimp"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
@@ -107,11 +113,14 @@ cask "vagrant-vmware-utility"
 cask "visual-studio-code"
 # Create, manage, and run virtual machines
 cask "vmware-fusion-tech-preview"
+# Resources for Wacom tablets
+cask "wacom-tablet"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "ComicViewer", id: 1455702185
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
+mas "GoodNotes", id: 1444383602
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
