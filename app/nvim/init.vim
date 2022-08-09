@@ -76,3 +76,5 @@ autocmd!
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
 augroup END
 
+" 挿入モードから離れたときに入力モードを切り替える
+autocmd InsertLeave * :silent !/opt/homebrew/bin/im-select com.apple.keylayout.ABC

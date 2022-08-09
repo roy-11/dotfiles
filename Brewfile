@@ -1,3 +1,4 @@
+tap "daipeihust/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -45,6 +46,8 @@ brew "starship"
 brew "terraform"
 # Terminal multiplexer
 brew "tmux"
+# Switch your input method through terminal
+brew "daipeihust/tap/im-select"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # Password manager that keeps all passwords secure behind one password
@@ -103,6 +106,8 @@ cask "numi"
 cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
+# Task manager for teams
+cask "taskade"
 # To-do & task list manager
 cask "ticktick"
 # Development environment
