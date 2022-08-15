@@ -1,0 +1,4 @@
+# sudo -H pip3 install -r requirements.txt
+# https://qastack.jp/programming/35313876/after-installing-with-pip-jupyter-command-not-found
+# 削除時はuninstallコマンドが効かないため/usr/local/binで日付を見て直接消す必要あり
+jupyter
