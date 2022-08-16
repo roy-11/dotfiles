@@ -39,3 +39,6 @@
     - command: ./setup_macos.sh
       stdout: true
       stderr: true
+    - command: ./setup_python.sh
+      stdout: true
+      stderr: true

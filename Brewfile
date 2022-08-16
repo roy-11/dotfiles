@@ -6,14 +6,22 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+# Companion library to apr, the Apache Portable Runtime library
+brew "apr-util"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Console Matrix
 brew "cmatrix"
+# Open source suite of directory software
+brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Distributed revision control system
@@ -22,6 +30,10 @@ brew "git"
 brew "guetzli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Network authentication protocol
+brew "krb5"
+# Postgres C API library
+brew "libpq"
 # Mac App Store command-line interface
 brew "mas"
 # Run a Kubernetes cluster locally
@@ -38,6 +50,8 @@ brew "nodenv"
 brew "peco"
 # General-purpose scripting language
 brew "php"
+# Python version management
+brew "pyenv"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts

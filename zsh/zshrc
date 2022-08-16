@@ -7,3 +7,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # nodenv setup_nodeで必要
 eval "$(nodenv init -)"
+
+# pyenv setup_pythonで必要
+eval "$(pyenv init -)"
