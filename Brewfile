@@ -78,6 +78,8 @@ cask "bettertouchtool"
 cask "brave-browser"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
+# C and C++ IDE
+cask "clion"
 # IDE for C, C++, PHP and Node.js
 cask "codelite"
 # Trains AIs to understand and translate texts
@@ -88,6 +90,7 @@ cask "discord"
 cask "docker"
 # Web browser
 cask "firefox"
+# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
 # Free and open-source image editor
