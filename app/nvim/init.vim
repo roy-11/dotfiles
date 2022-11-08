@@ -34,6 +34,10 @@ call plug#end()
 "" space+enterで空行を追加する
 noremap <Space><CR> O<ESC>
 
+" Space Pで最後にヤンクした文字列をペースト
+" nnoremap <silent> <C-p> "0p<CR>
+noremap PP "0p
+
 "" fzf
 nnoremap <C-p> :FZF<CR>
 
