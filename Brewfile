@@ -8,6 +8,8 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Console Matrix
