@@ -20,3 +20,7 @@ fi
 # jupyterの実行
 # poetry install
 # poetry run jupyter notebook <path>
+
+# nvimのcocエラー対応
+# [coc.nvim] Error on execute :pyx command, ultisnips feature of coc-snippets requires pyx support on vim.
+# pip install pynvim
