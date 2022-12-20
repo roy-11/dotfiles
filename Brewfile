@@ -34,6 +34,8 @@ brew "guetzli"
 brew "jq"
 # Network authentication protocol
 brew "krb5"
+# Lazier way to manage everything docker
+brew "lazydocker"
 # Postgres C API library
 brew "libpq"
 # Mac App Store command-line interface
