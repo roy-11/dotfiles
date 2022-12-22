@@ -36,6 +36,13 @@ alias tl='tmux ls'
 alias ta='tmux a'
 alias tk='tmux kill-server'
 
+# setup ide or project window 
+alias ide="~/.dotfiles/common/scripts.sh ide"
+alias michi="~/.dotfiles/common/scripts.sh michi"
+
+# docker
+alias lzd='lazydocker'
+
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias delss='find ~/Screenshots -type f -name "スクリーン*" -print0 | xargs -0 rm'
