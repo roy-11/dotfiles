@@ -13,15 +13,16 @@
     ~/.config/fish/functions/fish_user_key_bindings.fish:
       create: true
       path: fish/functions/fish_user_key_bindings.fish
-    # others
-    ~/.gitconfig:
-    ~/.gitignore_global:
-    ~/.config/nvim/init.vim:
+    # nvim, tmux
+    ~/.config/nvim/lua/user:
       create: true
-      path: app/nvim/init.vim
+      path: app/nvim/lua/astro/user
     ~/.tmux.conf:
       create: true
       path: app/tmux/tmux.conf
+    # others
+    ~/.gitconfig:
+    ~/.gitignore_global:
     ~/.config/karabiner:
       create: true
       path: app/karabiner
