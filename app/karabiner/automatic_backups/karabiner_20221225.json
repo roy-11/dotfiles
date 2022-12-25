@@ -16,20 +16,20 @@
                 },
                 "rules": [
                     {
-                        "description": "Vi Mode [left_control + shift + hjkl]",
+                        "description": "Vi Mode [left_control + hjkl]",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control",
-                                            "shift"
+                                            "control"
                                         ],
                                         "optional": [
                                             "caps_lock",
                                             "command",
                                             "option",
+                                            "shift",
                                             "fn"
                                         ]
                                     }
@@ -46,13 +46,13 @@
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control",
-                                            "shift"
+                                            "control"
                                         ],
                                         "optional": [
                                             "caps_lock",
                                             "command",
                                             "option",
+                                            "shift",
                                             "fn"
                                         ]
                                     }
@@ -69,13 +69,13 @@
                                     "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control",
-                                            "shift"
+                                            "control"
                                         ],
                                         "optional": [
                                             "caps_lock",
                                             "command",
                                             "option",
+                                            "shift",
                                             "fn"
                                         ]
                                     }
@@ -92,13 +92,13 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control",
-                                            "shift"
+                                            "control"
                                         ],
                                         "optional": [
                                             "caps_lock",
                                             "command",
                                             "option",
+                                            "shift",
                                             "fn"
                                         ]
                                     }
@@ -106,6 +106,63 @@
                                 "to": [
                                     {
                                         "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "右コマンドキーを、英数・かなのトグルに変更する",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "ja"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "en"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "japanese_kana"
                                     }
                                 ],
                                 "type": "basic"
@@ -340,22 +397,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [],
-                    "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": false,
-                        "is_pointing_device": true,
-                        "product_id": 834,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [],
-                    "treat_as_built_in_keyboard": false
+                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [
