@@ -12,12 +12,12 @@ brew "apr-util"
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
 # Console Matrix
 brew "cmatrix"
 # Open source suite of directory software
 brew "openldap"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -26,18 +26,22 @@ brew "fish"
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Disk usage analyzer with console interface written in Go
+brew "gdu"
 # Distributed revision control system
 brew "git"
 # Perceptual JPEG encoder
 brew "guetzli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
-brew "krb5"
 # Lazier way to manage everything docker
 brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Postgres C API library
 brew "libpq"
+# Powerful, lightweight programming language
+brew "lua"
 # Mac App Store command-line interface
 brew "mas"
 # Run a Kubernetes cluster locally
@@ -56,6 +60,8 @@ brew "peco"
 brew "php"
 # Python version management
 brew "pyenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts

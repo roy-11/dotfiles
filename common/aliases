@@ -11,9 +11,6 @@ alias gl='git log --oneline -5'
 alias app='cd ~/App'
 alias desk='cd ~/Desktop'
 
-# open or edit file
-alias dotf='code ~/.dotfiles'
-
 # pc
 alias allps='ps aux'
 alias du1='du -d 1'
@@ -41,7 +38,10 @@ alias ide="~/.dotfiles/common/scripts.sh ide"
 alias michi="~/.dotfiles/common/scripts.sh michi"
 
 # docker
-alias lzd='lazydocker'
+alias ld='lazydocker'
+
+# git
+alias lg='lazygit'
 
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
