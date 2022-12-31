@@ -1,5 +1,6 @@
 # ls
 alias ls='exa -laFh --git'
+alias tree='~/.dotfiles/common/scripts.sh tree'
 
 # git
 alias gs='git status'
@@ -34,8 +35,8 @@ alias ta='tmux a'
 alias tk='tmux kill-server'
 
 # setup ide or project window 
-alias ide="~/.dotfiles/common/scripts.sh ide"
-alias michi="~/.dotfiles/common/scripts.sh michi"
+alias ide='~/.dotfiles/common/scripts.sh ide'
+alias michi='~/.dotfiles/common/scripts.sh michi'
 
 # docker
 alias ld='lazydocker'

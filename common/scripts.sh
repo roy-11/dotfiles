@@ -12,4 +12,8 @@ michi() {
   tmux split-window -v
 }
 
+tree() {
+  exa --tree --level=$1 --no-filesize --no-user --no-time --no-permissions -I "node_modules" -F
+}
+
 "$@"
