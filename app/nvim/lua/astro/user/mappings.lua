@@ -21,6 +21,10 @@ return {
     ["˚"] = { ":m .-2<CR>==", desc = "選択した行を一行上にずらす" },
     ["∆"] = { ":m .+1<CR>==", desc = "選択した行を一行下にずらす" },
 
+    -- bufferline
+    ["<Tab>"] = { "<Cmd>BufferLineCycleNext<CR>", desc = "タブキーで次のバッファに移動" },
+    ["<S-Tab>"] = { "<Cmd>BufferLineCyclePrev<CR>", desc = "タブキーで前のバッファに移動" },
+
     -- multi-cursor
     ["<C-k>"] = {
       "<cmd>call vm#commands#add_cursor_up(0, v:count1)<cr>",

@@ -46,6 +46,10 @@ return {
     format = lspkind.cmp_format({
       maxwidth = 50,
       ellipsis_char = "...",
+      before = function(_, vim_item)
+        vim_item.dup = { buffer = 1, path = 1, nvim_lsp = 0 }
+        return vim_item
+      end,
     }),
   },
 }
