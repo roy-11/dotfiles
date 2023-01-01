@@ -17,6 +17,9 @@
     ~/.config/nvim/lua/user:
       create: true
       path: app/nvim/lua/astro/user
+    ~/.config/.stylua.toml:
+      create: true
+      path: .stylua.toml
     ~/.tmux.conf:
       create: true
       path: app/tmux/tmux.conf

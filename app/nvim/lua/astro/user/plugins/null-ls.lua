@@ -11,6 +11,7 @@ local diagnostics = null_ls.builtins.diagnostics -- リンターをセットア�
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 return {
+  -- debug = true,
   -- フォーマットとリンターをセットアップ
   sources = {
     --  特定のファイルタイプを無効にするには
