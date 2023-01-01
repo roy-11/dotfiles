@@ -31,4 +31,10 @@ return {
   },
   { "mg979/vim-visual-multi" },
   { "christoomey/vim-tmux-navigator" },
+  {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup({})
+    end,
+  },
 }

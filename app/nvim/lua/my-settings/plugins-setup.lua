@@ -83,6 +83,15 @@ return packer.startup(function(use)
 
   -- gitとの連携
   use("lewis6991/gitsigns.nvim") -- 左側に行の変更を表示
+
+  -- Zenモード
+  use({
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup({})
+    end,
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end

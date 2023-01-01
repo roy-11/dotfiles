@@ -18,19 +18,19 @@ return {
     ["<leader>tx"] = { "<cmd>tabclose<CR>", desc = "現在のタブを閉じる" },
     ["<leader>tn"] = { "<cmd>tabn<CR>", desc = "次のタブに移動する" }, -- toggle nodeに上書き
     ["<leader>tp"] = { "<cmd>tabp<CR>", desc = "前のタブに移動する" },
-    ["˚"] = { ":m .-2<CR>==", desc = "選択した行を一行上にずらす" },
-    ["∆"] = { ":m .+1<CR>==", desc = "選択した行を一行下にずらす" },
+    ["˚"] = { ":m .-2<CR>==", desc = "選択した行を一行上にずらす" }, -- option + k
+    ["∆"] = { ":m .+1<CR>==", desc = "選択した行を一行下にずらす" }, -- option + j
 
     -- bufferline
     ["<Tab>"] = { "<Cmd>BufferLineCycleNext<CR>", desc = "タブキーで次のバッファに移動" },
     ["<S-Tab>"] = { "<Cmd>BufferLineCyclePrev<CR>", desc = "タブキーで前のバッファに移動" },
 
-    -- multi-cursor
-    ["<C-k>"] = {
+    -- multi-cursor(shift + opition + jk), vim-tmux-navigatorとの競合のためCtrl-j,kは使用できない
+    [""] = {
       "<cmd>call vm#commands#add_cursor_up(0, v:count1)<cr>",
       desc = "一行上にマルチカーソルを作成",
     },
-    ["<C-j>"] = {
+    ["Ô"] = {
       "<cmd>call vm#commands#add_cursor_down(0, v:count1)<cr>",
       desc = "一行下にマルチカーソルを作成",
     },
@@ -54,6 +54,9 @@ return {
 
     -- lsp
     ["<leader>rs"] = { ":LspRestart<cr>", desc = "LSPサーバーを再起動させる" },
+
+    -- zen-mode
+    ["<leader>z"] = { ":ZenMode<cr>", desc = "Zenモード" },
   },
 
   i = {
@@ -62,7 +65,7 @@ return {
   },
 
   v = {
-    ["˚"] = { ":m '<-2<CR>gv-gv", desc = "選択した行を一行上にずらす" },
-    ["∆"] = { ":m '>+1<CR>gv-gv", desc = "選択した行を一行下にずらす" },
+    ["˚"] = { ":m '<-2<CR>gv-gv", desc = "選択した行を一行上にずらす" }, -- option + k
+    ["∆"] = { ":m '>+1<CR>gv-gv", desc = "選択した行を一行下にずらす" }, -- option + j
   },
 }

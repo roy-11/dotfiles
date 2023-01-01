@@ -58,5 +58,8 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- ファイル�
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- lspを再起動させる
 
 -- multi-cursor
-keymap.set("<C-k>", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<cr>") -- 一行上にマルチカーソルを作成
-keymap.set("<C-j>", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<cr>") -- 一行下にマルチカーソルを作成
+keymap.set("", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<cr>") -- 一行上にマルチカーソルを作成
+keymap.set("Ô", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<cr>") -- 一行下にマルチカーソルを作成
+
+-- zen-mode
+keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>") -- 全ての git コミットをリストアップ
