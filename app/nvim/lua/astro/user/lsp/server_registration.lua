@@ -13,7 +13,8 @@ if not typescript_setup then
   return
 end
 
-return function()
+return function(server, opts)
+  require("lspconfig")[server].setup(opts)
   require("lspconfig")["emmet_ls"].setup({
     capabilities = capabilities,
     filetypes = {
