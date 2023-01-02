@@ -8,6 +8,7 @@ return {
   },
   { "nvim-lua/plenary.nvim" },
   { "szw/vim-maximizer" },
+  { "rafamadriz/friendly-snippets" },
   { "inkarkat/vim-ReplaceWithRegister" },
   { "jose-elias-alvarez/typescript.nvim" },
   {
