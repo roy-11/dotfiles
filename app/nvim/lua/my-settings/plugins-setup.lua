@@ -37,6 +37,9 @@ return packer.startup(function(use)
   use("numToStr/Comment.nvim") -- gc, gccでコメント化
   use("windwp/nvim-autopairs") -- 括弧や引用符を自動で閉じる
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- タグを自動で閉じる
+  use("thinca/vim-quickrun") -- :QuickRunでファイルを実行
+  use("easymotion/vim-easymotion") -- 行を跨いだfで2文字で指定された任意の場所にジャンプ
+  use("justinmk/vim-sneak") -- 画面内の任意の場所に素早く移動
 
   -- ui
   use("nvim-tree/nvim-tree.lua") -- ファイルエクスプローラ
@@ -91,6 +94,14 @@ return packer.startup(function(use)
       require("zen-mode").setup({})
     end,
   })
+
+  -- debug関連
+  use({
+    "andrewferrier/debugprint.nvim",
+    config = function()
+      require("debugprint").setup()
+    end,
+  }) -- g?で変数を出力する
 
   if packer_bootstrap then
     require("packer").sync()

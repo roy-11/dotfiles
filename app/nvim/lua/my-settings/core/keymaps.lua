@@ -8,6 +8,10 @@ keymap.set("i", "jk", "<ESC>") -- jkで挿入モードから出る
 keymap.set("i", "jj", "<ESC>") -- jjで挿入モードから出る
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- 検索のハイライトを消す
 keymap.set("n", "x", '"_x') -- xで1文字削除する際にレジスタに登録しない
+keymap.set("n", "x", '"_x') -- xで1文字削除する際にレジスタに登録しない
+keymap.set("n", "PP", '"0p') -- Shift + Pで最後にヤンクした文字列をペーストさせる
+keymap.set("n", "<Space><CR>", "O<ESC>") -- カーソルのある行で改行する
+
 keymap.set("n", "<leader>+", "<C-a>") -- インクリメント
 keymap.set("n", "<leader>-", "<C-x>") -- デクリメント
 
@@ -63,3 +67,6 @@ keymap.set("Ô", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<cr>") -- �
 
 -- zen-mode
 keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>") -- 全ての git コミットをリストアップ
+
+-- quickrun
+keymap.set("n", "<leader>qr", "<cmd>QuickRun<cr>") -- ファイルを実行

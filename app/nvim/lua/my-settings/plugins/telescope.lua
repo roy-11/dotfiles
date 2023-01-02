@@ -18,7 +18,7 @@ telescope.setup({
       i = {
         ["<C-k>"] = actions.move_selection_previous, -- 前の結果に移動
         ["<C-j>"] = actions.move_selection_next, -- 後の結果に移動
-        ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- 選択したものをquickfixlistに送信する
+        ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- NormalモードにしてからCtrl + qで結果をquickfixlistに送信する 例. git status
       },
     },
   },

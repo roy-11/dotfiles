@@ -38,4 +38,13 @@ return {
       require("zen-mode").setup({})
     end,
   },
+  {
+    "andrewferrier/debugprint.nvim",
+    config = function()
+      require("debugprint").setup()
+    end,
+  },
+  { "thinca/vim-quickrun" },
+  { "easymotion/vim-easymotion" },
+  { "justinmk/vim-sneak" },
 }
