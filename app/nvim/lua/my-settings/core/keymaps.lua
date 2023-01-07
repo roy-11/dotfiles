@@ -70,3 +70,6 @@ keymap.set("n", "<leader>z", "<cmd>ZenMode<cr>") -- 全ての git コミット�
 
 -- quickrun
 keymap.set("n", "<leader>qr", "<cmd>QuickRun<cr>") -- ファイルを実行
+
+-- spectre
+keymap.set("n", "<leader>so", "<cmd>QuickRun<cr>") -- 検索し置換するパネルを表示

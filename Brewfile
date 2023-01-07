@@ -30,6 +30,8 @@ brew "fzf"
 brew "gdu"
 # Distributed revision control system
 brew "git"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # Perceptual JPEG encoder
 brew "guetzli"
 # Lightweight and flexible command-line JSON processor

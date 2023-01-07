@@ -49,6 +49,7 @@ return packer.startup(function(use)
   -- telescopeと曖昧検索
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- ソート性能の向上のための依存性
   use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+  use({ "windwp/nvim-spectre" }) -- 検索と置換のウインドウ
 
   -- 自動補完
   use("hrsh7th/nvim-cmp") -- 自動補完プラグイン

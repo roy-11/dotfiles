@@ -77,6 +77,11 @@ return {
 
     -- zen-mode
     ["<leader>z"] = { ":ZenMode<cr>", desc = "● Zen mode" }, -- Zenモード
+
+    -- nvim-spectre
+    ["<leader>so"] = { "<cmd>lua require('spectre').open()<CR>", desc = "● spectre" }, -- 検索し置換するパネルを表示
+    ["<leader>sw"] = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", desc = "● spectre word" }, -- 現在の単語を検索し置換
+    ["<leader>sp"] = { "<leader>sp viw:lua require('spectre').open_file_search()<cr>", desc = "● spectre in file" }, -- 現在のファイルで検索し置換
   },
 
   i = {

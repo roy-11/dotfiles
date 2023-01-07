@@ -47,4 +47,5 @@ return {
   { "thinca/vim-quickrun" },
   { "easymotion/vim-easymotion" },
   { "justinmk/vim-sneak" },
+  { "windwp/nvim-spectre" },
 }
