@@ -12,4 +12,14 @@ return function()
     pattern = "*",
     command = ":silent !/opt/homebrew/bin/im-select com.apple.keylayout.ABC",
   })
+
+  -- keymappingで動作しないためdebugprintの機能をpolishで定義
+  vim.keymap.set("n", "<leader>;", function()
+    return require("debugprint").debugprint({ variable = true })
+  end, {
+    expr = true,
+  })
+  vim.keymap.set("n", "g?d", function()
+    return require("debugprint").deleteprints()
+  end)
 end
