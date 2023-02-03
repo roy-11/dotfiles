@@ -38,9 +38,26 @@ return {
       require("zen-mode").setup({})
     end,
   },
-  { "andrewferrier/debugprint.nvim" },
+  {
+    "andrewferrier/debugprint.nvim",
+    config = function()
+      require("debugprint").setup()
+    end,
+  },
   { "thinca/vim-quickrun" },
   { "easymotion/vim-easymotion" },
   { "justinmk/vim-sneak" },
   { "windwp/nvim-spectre" },
+  {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("user.plugins.todo-comments")
+    end,
+  },
+  {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function() end,
+  },
 }

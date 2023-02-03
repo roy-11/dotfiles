@@ -13,6 +13,9 @@ return {
         ["<C-j>"] = actions.move_selection_next, -- 後の結果に移動
         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- NormalモードにしてからCtrl + qで結果をquickfixlistに送信する 例. git status
       },
+      n = {
+        ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- NormalモードにしてからCtrl + qで結果をquickfixlistに送信する 例. git status
+      },
     },
   },
 }

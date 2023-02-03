@@ -18,8 +18,11 @@ return function()
     return require("debugprint").debugprint({ variable = true })
   end, {
     expr = true,
+    desc = "● print a variable",
   })
   vim.keymap.set("n", "g?d", function()
     return require("debugprint").deleteprints()
-  end)
+  end, {
+    desc = "● delete debugprints",
+  })
 end
