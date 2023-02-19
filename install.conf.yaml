@@ -13,7 +13,7 @@
     ~/.config/fish/functions/fish_user_key_bindings.fish:
       create: true
       path: fish/functions/fish_user_key_bindings.fish
-    # nvim, tmux
+    # nvim, tmux, terminal
     ~/.config/nvim/lua/user:
       create: true
       path: app/nvim/lua/astro/user
@@ -23,6 +23,10 @@
     ~/.tmux.conf:
       create: true
       path: app/tmux/tmux.conf
+    ~/.config/kitty:
+      create: true
+      path: app/kitty
+
     # others
     ~/.gitconfig:
     ~/.gitignore_global:
