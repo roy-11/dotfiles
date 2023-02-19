@@ -1,28 +1,24 @@
 ## フォーカスを変更するショートカット
-# スペース内でウィンドウのフォーカスを変更する
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
-# ディスプレイのフォーカスを変更する（左と右）
-alt - s : yabai -m display --focus west
-alt - g : yabai -m display --focus east
+# https://github.com/koekeishiya/yabai/issues/1198#issuecomment-1101570402
+# https://github.com/koekeishiya/yabai/issues/719#issuecomment-728140216
+# スペース内でウィンドウのフォーカスを変更・スペース内にウィンドウがない場合は隣のディスプレイ内のウィンドウにフォーカスを変更
+alt - j : yabai -m window --focus south || yabai -m display --focus south
+alt - k : yabai -m window --focus north || yabai -m display --focus north
+alt - h : yabai -m window --focus west || yabai -m window --focus $(yabai -m query --spaces --display west | jq '.[] | select(."is-visible" == true) | ."last-window"')
+alt - l : yabai -m window --focus east || yabai -m window --focus $(yabai -m query --spaces --display east | jq '.[] | select(."is-visible" == true) | ."first-window"')
+alt - n : yabai -m window --focus next || yabai -m display --focus next || yabai -m space --focus last
+alt - p : yabai -m window --focus prev || yabai -m display --focus prev || yabai -m space --focus first
+
 
 ## レイアウトを変更するためのショートカット
-# レイアウトを時計回りに回転
-shift + alt - r : yabai -m space --rotate 270
-# Y軸方向に反転
-shift + alt - y : yabai -m space --mirror y-axis
-# X軸方向に反転
-shift + alt - x : yabai -m space --mirror x-axis
-# ウィンドウのフロート切り替え
-shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+shift + alt - r : yabai -m space --rotate 270 # レイアウトを時計回りに回転
+shift + alt - y : yabai -m space --mirror y-axis # Y軸方向に反転
+shift + alt - x : yabai -m space --mirror x-axis # X軸方向に反転
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2 # ウィンドウをフロートにする
 
 ## ウィンドウサイズを変更するショートカット
-# ウィンドウを最大化
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
-# ウィンドウのツリーをバランスよく配置（同じ面積を占めるようにサイズを変更）
-shift + alt - e : yabai -m space --balance
+shift + alt - m : yabai -m window --toggle zoom-fullscreen # ウィンドウを最大化
+shift + alt - e : yabai -m space --balance # ウィンドウのツリーをバランスよく配置（同じ面積を占めるようにサイズを変更）
 
 ## ウィンドウを移動させるためのショートカット
 # ウィンドウを入れ替え
@@ -39,11 +35,11 @@ ctrl + alt - l : yabai -m window --warp east
 shift + alt - s : yabai -m window --display west; yabai -m display --focus west
 shift + alt - g : yabai -m window --display east; yabai -m display --focus east
 
-# ウィンドウをスペースに移動する（デスクトップ/ワークスペース）
-# ウィンドウを前後のスペースに移動する
+# ウィンドウを移動
+# ウィンドウを前後のスペースに移動
 shift + alt - p : yabai -m window --space prev;
 shift + alt - n : yabai -m window --space next;
-# ウィンドウをスペースに移動する
+# ウィンドウをスペースに移動
 shift + alt - 1 : yabai -m window --space 1;
 shift + alt - 2 : yabai -m window --space 2;
 shift + alt - 3 : yabai -m window --space 3;
