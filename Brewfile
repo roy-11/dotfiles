@@ -6,6 +6,8 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/services"
+tap "koekeishiya/formulae"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
 # Official Amazon AWS command-line interface
@@ -34,6 +36,8 @@ brew "git"
 brew "gnu-sed"
 # Perceptual JPEG encoder
 brew "guetzli"
+# Post-modern modal text editor
+brew "helix"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Lazier way to manage everything docker
@@ -50,8 +54,12 @@ brew "mas"
 brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Tiny, lightning fast, feature-packed file manager
+brew "nnn"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
@@ -78,6 +86,10 @@ brew "tmux"
 brew "daipeihust/tap/im-select"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# Simple hotkey-daemon for macOS.
+brew "koekeishiya/formulae/skhd"
+# A tiling window manager for macOS based on binary space partitioning.
+brew "koekeishiya/formulae/yabai"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application launcher and productivity software
@@ -127,10 +139,14 @@ cask "karabiner-elements"
 cask "kindle"
 # Preview and audit Kindle eBooks
 cask "kindle-previewer"
+# GPU-based terminal emulator
+cask "kitty"
 # Explore and manipulate your MongoDB data
 cask "mongodb-compass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # Calculator and converter application
 cask "numi"
 # Move and resize windows using keyboard shortcuts or snap areas
