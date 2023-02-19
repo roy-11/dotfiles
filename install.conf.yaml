@@ -39,6 +39,9 @@
     ~/.config/skhd:
       create: true
       path: app/skhd
+    ~/.config/sketchybar:
+      create: true
+      path: app/sketchybar
 
 - shell:
     - command: ./setup_homebrew.sh

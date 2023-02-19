@@ -1,4 +1,5 @@
 tap "daipeihust/tap"
+tap "felixkratz/formulae"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -30,6 +31,8 @@ brew "freetds"
 brew "fzf"
 # Disk usage analyzer with console interface written in Go
 brew "gdu"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # GNU implementation of the famous stream editor
@@ -58,8 +61,6 @@ brew "mozjpeg"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Tiny, lightning fast, feature-packed file manager
-brew "nnn"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
@@ -72,6 +73,8 @@ brew "php"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# File browser
+brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -84,6 +87,8 @@ brew "terraform"
 brew "tmux"
 # Switch your input method through terminal
 brew "daipeihust/tap/im-select"
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # Simple hotkey-daemon for macOS.
@@ -151,6 +156,8 @@ cask "ngrok"
 cask "numi"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
 # Team communication and collaboration software
 cask "slack"
 # Task manager for teams
