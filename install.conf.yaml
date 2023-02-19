@@ -17,6 +17,9 @@
     ~/.config/nvim/lua/user:
       create: true
       path: app/nvim/lua/astro/user
+    ~/.config/nvim.vscode/init.vim:
+      create: true
+      path: app/vscode/vim/init.vim
     ~/.config/.stylua.toml:
       create: true
       path: .stylua.toml
