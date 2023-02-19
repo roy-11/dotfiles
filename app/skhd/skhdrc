@@ -1,3 +1,11 @@
+## shell設定(fishではなくdashで実行させる)
+# https://github.com/koekeishiya/skhd/issues/42#issuecomment-401886533
+# https://github.com/koekeishiya/yabai/issues/267#issuecomment-536160223
+# $ brew edit skhd # opens .rb file
+# $ brew services stop skhd
+# $ brew reinstall skhd
+# $ brew services start skhd
+
 ## フォーカスを変更するショートカット
 # https://github.com/koekeishiya/yabai/issues/1198#issuecomment-1101570402
 # https://github.com/koekeishiya/yabai/issues/719#issuecomment-728140216
