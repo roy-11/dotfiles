@@ -1,0 +1,33 @@
+#!/usr/bin/env zsh
+
+# デフォルトレイアウト：bsp(binary space partioning), stack, flowのいずれか 
+yabai -m config layout bsp
+
+# 縦割りなら右に、横割りなら下に新しいウィンドウが生成される
+yabai -m config window_placement second_child
+
+# ウインドウのパディング
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
+
+# フォーカスのあるウィンドウにマウスをフォーカスさせる
+yabai -m config mouse_follows_focus on
+
+# マウスでクリックとドラッグをするための修飾子
+yabai -m config mouse_modifier alt
+# 左クリックドラッグでウィンドウを動かす
+yabai -m config mouse_action1 move
+# 右クリックドラッグでウィンドウをリサイズする
+yabai -m config mouse_action2 resize
+# ウィンドウが他のウィンドウの中央にドロップされた場合、それらを入れ替える (端では分割される)
+yabai -m mouse_drop_action swap
+
+# 特定のアプリをyabaiで管理できないようにする
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+
+echo "yabai configuration loaded.."

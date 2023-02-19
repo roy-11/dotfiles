@@ -29,6 +29,12 @@
     ~/.config/karabiner:
       create: true
       path: app/karabiner
+    ~/.config/yabai:
+      create: true
+      path: app/yabai
+    ~/.config/skhd:
+      create: true
+      path: app/skhd
 
 - shell:
     - command: ./setup_homebrew.sh
