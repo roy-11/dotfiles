@@ -14,7 +14,16 @@
       create: true
       path: fish/functions/fish_user_key_bindings.fish
     # nvim, tmux, terminal
-    ~/.config/nvim/lua/user:
+    ~/.config/nvim:
+      create: true
+      path: ~/.config/nvim.lazy # 使用するnvim設定を切り替え
+    ~/.config/nvim.lazy/lua:
+      create: true
+      path: app/nvim/lua/lazy
+    ~/.config/nvim.my-settings/lua:
+      create: true
+      path: app/nvim/lua/my-settings
+    ~/.config/nvim.astro/lua/user:
       create: true
       path: app/nvim/lua/astro/user
     ~/.config/nvim.vscode/init.vim:
