@@ -31,7 +31,9 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Rize$" manage=off
 yabai -m rule --add app="^Cursor Pro$" manage=off
+# https://github.com/koekeishiya/yabai/issues/675
 yabai -m rule --add app="^iStat Menus Status$" manage=off
+yabai -m rule --add app="iStat Menus.*" manage=off mouse_follows_focus=off
 
 # ボーダーカラー設定
 yabai -m config window_border on
