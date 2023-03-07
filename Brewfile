@@ -9,6 +9,10 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
 # Official Amazon AWS command-line interface
@@ -17,10 +21,12 @@ brew "awscli"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Console-based Audio Visualizer for ALSA
+brew "cava"
 # Console Matrix
 brew "cmatrix"
-# Open source suite of directory software
-brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -47,8 +53,6 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Postgres C API library
-brew "libpq"
 # Powerful, lightweight programming language
 brew "lua"
 # Mac App Store command-line interface
@@ -103,6 +107,8 @@ cask "alfred"
 cask "alt-tab"
 # Memory training application
 cask "anki"
+# Audio utility
+cask "background-music"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
 # Web browser focusing on privacy
@@ -154,6 +160,8 @@ cask "mysqlworkbench"
 cask "ngrok"
 # Calculator and converter application
 cask "numi"
+# Toolbox companion for QMK Firmware
+cask "qmk-toolbox"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Tool that provides consistent, highly configurable symbols for apps
@@ -171,7 +179,7 @@ cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
 # Create, manage, and run virtual machines
-cask "vmware-fusion-tech-preview"
+cask "vmware-fusion"
 # Resources for Wacom tablets
 cask "wacom-tablet"
 # Video communication and virtual meeting platform

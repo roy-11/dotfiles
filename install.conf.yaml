@@ -54,6 +54,9 @@
     ~/.config/sketchybar:
       create: true
       path: app/sketchybar
+    ~/.config/cava:
+      create: true
+      path: app/cava
 
 - shell:
     - command: ./setup_homebrew.sh
