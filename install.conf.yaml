@@ -38,6 +38,9 @@
     ~/.config/kitty:
       create: true
       path: app/kitty
+    /usr/local/bin/imgcat:
+      create: true
+      path: app/iterm2/imgcat # iterm2上で画像を表示(sudo権限が必要)
 
     # others
     ~/.gitconfig:
@@ -57,6 +60,9 @@
     ~/.config/cava:
       create: true
       path: app/cava
+    ~/.config/ranger:
+      create: true
+      path: app/ranger
 
 - shell:
     - command: ./setup_homebrew.sh
