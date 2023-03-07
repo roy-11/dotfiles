@@ -16,4 +16,9 @@ tree() {
   exa --tree --level=$1 --no-filesize --no-user --no-time --no-permissions -I "node_modules" -F
 }
 
+gl() {
+  num=${1:-5}
+  git log --oneline -n $num
+}
+
 "$@"

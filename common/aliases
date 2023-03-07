@@ -6,7 +6,8 @@ alias tree='~/.dotfiles/common/scripts.sh tree'
 alias gs='git status'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias gl='git log --oneline -5'
+alias gl='~/.dotfiles/common/scripts.sh gl'
+alias lg='lazygit'
 
 # cd
 alias app='cd ~/App'
@@ -41,8 +42,13 @@ alias michi='~/.dotfiles/common/scripts.sh michi'
 # docker
 alias ld='lazydocker'
 
-# git
-alias lg='lazygit'
+# yabai and skhd
+alias yabaistart='brew services start yabai'
+alias yabairestart='brew services restart yabai'
+alias yabaistop='brew services stop yabai'
+alias skhdrtart='brew services start skhd'
+alias skhdrestart='brew services restart skhd'
+alias skhdstop='brew services stop skhd'
 
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
