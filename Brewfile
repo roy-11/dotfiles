@@ -21,8 +21,6 @@ brew "awscli"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
-# Console-based Audio Visualizer for ALSA
-brew "cava"
 # Console Matrix
 brew "cmatrix"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -107,8 +105,6 @@ cask "alfred"
 cask "alt-tab"
 # Memory training application
 cask "anki"
-# Audio utility
-cask "background-music"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
 # Web browser focusing on privacy
