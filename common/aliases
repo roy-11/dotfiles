@@ -46,9 +46,12 @@ alias ld='lazydocker'
 alias yabaistart='brew services start yabai'
 alias yabairestart='brew services restart yabai'
 alias yabaistop='brew services stop yabai'
-alias skhdrtart='brew services start skhd'
+alias skhdstart='brew services start skhd'
 alias skhdrestart='brew services restart skhd'
 alias skhdstop='brew services stop skhd'
+alias sketchystart='brew services start sketchybar'
+alias sketchyrestart='brew services restart sketchybar'
+alias sketchystop='brew services stop sketchybar'
 
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
