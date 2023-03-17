@@ -148,6 +148,8 @@ cask "kindle"
 cask "kindle-previewer"
 # GPU-based terminal emulator
 cask "kitty"
+# Web browser
+cask "microsoft-edge"
 # Explore and manipulate your MongoDB data
 cask "mongodb-compass"
 # Visual tool to design, develop and administer MySQL servers
