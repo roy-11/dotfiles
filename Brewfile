@@ -126,6 +126,8 @@ cask "firefox"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-ricty-diminished"
+# Developer targeted fonts with a high number of glyphs
+cask "font-symbols-only-nerd-font"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
