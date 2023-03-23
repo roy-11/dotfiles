@@ -105,6 +105,8 @@ cask "alfred"
 cask "alt-tab"
 # Memory training application
 cask "anki"
+# Chromium based browser
+cask "arc"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
 # Web browser focusing on privacy
@@ -150,6 +152,8 @@ cask "kindle"
 cask "kindle-previewer"
 # GPU-based terminal emulator
 cask "kitty"
+# App to manage software development and track bugs
+cask "linear-linear"
 # Web browser
 cask "microsoft-edge"
 # Explore and manipulate your MongoDB data
@@ -160,8 +164,12 @@ cask "mysqlworkbench"
 cask "ngrok"
 # Calculator and converter application
 cask "numi"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Tool that provides consistent, highly configurable symbols for apps
