@@ -13,6 +13,7 @@
     ~/.config/fish/functions/fish_user_key_bindings.fish:
       create: true
       path: fish/functions/fish_user_key_bindings.fish
+
     # nvim, tmux, terminal
     ~/.config/nvim:
       create: true
@@ -29,9 +30,8 @@
     ~/.config/nvim.vscode/init.vim:
       create: true
       path: app/vscode/vim/init.vim
-    ~/.config/.stylua.toml:
-      create: true
-      path: .stylua.toml
+
+    # tmux, terminal
     ~/.tmux.conf:
       create: true
       path: app/tmux/tmux.conf
@@ -42,9 +42,11 @@
       create: true
       path: app/iterm2/imgcat # iterm2上で画像を表示(sudo権限が必要)
 
-    # others
+    # git
     ~/.gitconfig:
     ~/.gitignore_global:
+
+    # others
     ~/.config/karabiner:
       create: true
       path: app/karabiner
@@ -63,6 +65,13 @@
     ~/.config/ranger:
       create: true
       path: app/ranger
+    ~/.config/.stylua.toml:
+      create: true
+      path: .stylua.toml
+    ~/.config/shell_gpt:
+      create: true
+      path: app/shellgpt
+
 
 - shell:
     - command: ./setup_homebrew.sh
