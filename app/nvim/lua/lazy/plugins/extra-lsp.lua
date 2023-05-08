@@ -1,0 +1,46 @@
+return {
+  -- 構文解析（シンタックスやハイライト）
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "bash",
+        "help",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+        "graphql", -- 追加
+        "prisma", -- 追加
+      },
+    },
+  },
+  -- LSP設定
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        -- GraphQL LSP設定
+        graphql = {
+          cmd = { "graphql-lsp", "server", "--method", "stream" },
+          filetypes = { "graphql" },
+        },
+
+        -- Prisma LSP設定
+        prisma = {
+          cmd = { "prisma-language-server", "--stdio" },
+          filetypes = { "prisma" },
+        },
+      },
+    },
+  },
+}
