@@ -26,3 +26,10 @@ map("n", "<Space><CR>", "O<ESC>", { desc = "create new line" })
 ----------------------
 
 map("n", "<Space>r", "<cmd>QuickRun<CR>", { desc = "run this file" })
+
+map("n", "<leader>;", function()
+  return require("debugprint").debugprint({ variable = true })
+end, {
+  expr = true,
+  desc = "print a variable",
+})

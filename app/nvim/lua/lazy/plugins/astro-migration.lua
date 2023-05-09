@@ -7,7 +7,12 @@ return {
   { "mg979/vim-visual-multi" },
   { "christoomey/vim-tmux-navigator" },
   { "folke/zen-mode.nvim" },
-  { "andrewferrier/debugprint.nvim" },
+  {
+    "andrewferrier/debugprint.nvim",
+    config = function()
+      require("debugprint").setup()
+    end,
+  },
   { "thinca/vim-quickrun" },
   { "easymotion/vim-easymotion" },
   { "justinmk/vim-sneak" },
