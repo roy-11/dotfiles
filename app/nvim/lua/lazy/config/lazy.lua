@@ -20,6 +20,7 @@ require("lazy").setup({
     -- 追記
     { import = "lazyvim.plugins.extras.linting.eslint" }, -- 追加：eslint
     { import = "lazyvim.plugins.extras.formatting.prettier" }, -- 追加：prettier
+    { import = "lazyvim.plugins.extras.coding.copilot" }, -- 追加：copilot
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
