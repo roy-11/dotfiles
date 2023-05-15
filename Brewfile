@@ -9,12 +9,20 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # New file format for still image compression
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Text processing system for reStructuredText
+brew "docutils"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -27,12 +35,16 @@ brew "cmatrix"
 brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
+# GNU compiler collection
+brew "gcc"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Graphics library to dynamically manipulate images
+brew "gd"
 # Disk usage analyzer with console interface written in Go
 brew "gdu"
 # GitHub command-line tool
@@ -85,6 +97,8 @@ brew "shellcheck"
 brew "starship"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Simplified and community-driven man pages
+brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Switch your input method through terminal
@@ -156,7 +170,7 @@ cask "kitty"
 cask "linear-linear"
 # Web browser
 cask "microsoft-edge"
-# Explore and manipulate your MongoDB data
+# Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
