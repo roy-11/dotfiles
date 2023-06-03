@@ -1,5 +1,10 @@
 #!/usr/bin/env zsh
 
+# SIPを無効にしているため、スクリプト設定を追加した後にパスワードなしで--load-saを実行
+# https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
 # デフォルトレイアウト：bsp(binary space partioning), stack, flowのいずれか 
 yabai -m config layout bsp
 
@@ -26,13 +31,16 @@ yabai -m config mouse_action2 resize
 yabai -m mouse_drop_action swap
 
 # 特定のアプリをyabaiで管理できないようにする
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Karabiner-Elements$" manage=off
-yabai -m rule --add app="^Rize$" manage=off
-yabai -m rule --add app="^Cursor Pro$" manage=off
+# https://github.com/koekeishiya/yabai/issues/1125
 # https://github.com/koekeishiya/yabai/issues/675
-yabai -m rule --add app="^iStat Menus Status$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^システム環境設定$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^Calculator$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^計算機$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^Cursor Pro$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^Numi$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^iStat Menus Status$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="iStat Menus.*" manage=off mouse_follows_focus=off
 
 # ボーダーカラー設定
@@ -44,7 +52,7 @@ yabai -m config insert_feedback_color 0xFF88C0D0
 # 全てのフォーカスしていないウィンドウのopacityを0.3にする
 yabai -m config window_opacity on
 yabai -m config active_window_opacity 1.0
-yabai -m config normal_window_opacity 0.8
+# yabai -m config normal_window_opacity 0.8
 
 # Sketchybarとの連携
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
