@@ -1,4 +1,5 @@
 #!/bin/bash
+# 参考：https://github.com/FelixKratz/SketchyBar/discussions/47?sort=top#discussioncomment-4119308
 
 source "$HOME/.config/sketchybar/colors.sh" # Loads all defined colors
 source "$HOME/.config/sketchybar/icons.sh" # Loads all defined icons
@@ -24,7 +25,6 @@ bar=(
   color=$BAR_COLOR
   shadow=on
   position=top
-  sticky=off # スペースの切り替えを早くする https://github.com/FelixKratz/SketchyBar/issues/220#issuecomment-1197011148
   padding_right=10
   padding_left=10
   corner_radius=9
@@ -32,6 +32,14 @@ bar=(
   margin=10
   blur_radius=20
   notch_width=0
+
+  # 変更
+  # yabaiを使ってスペースを早く移動する設定をしている場合にstickyをonにするとsketchybarが再描画されない
+  # https://github.com/FelixKratz/SketchyBar/issues/220#issuecomment-1197011148
+  # yabaiを使ったスペース移動：SIPを無効にしたあとにyaabi --load-saを実行し、yabai -m space --focusで移動する
+  # https://apple.stackexchange.com/questions/434555/can-you-completely-disable-desktop-switching-animation-on-macos
+  # https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection
+  sticky=on
 )
 
 sketchybar --bar "${bar[@]}"

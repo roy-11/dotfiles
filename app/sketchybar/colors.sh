@@ -13,7 +13,7 @@ export GREY=0xff939ab7
 export TRANSPARENT=0x00000000
 
 # General bar colors
-export BAR_COLOR=0x9a08291B
+export BAR_COLOR=0x9a08291B # 変更
 export ICON_COLOR=$WHITE # Color of all icons
 export LABEL_COLOR=$WHITE # Color of all labels
 export BACKGROUND_1=0x903c3e4f
@@ -25,6 +25,7 @@ export POPUP_BORDER_COLOR=$WHITE
 export SHADOW_COLOR=$BLACK
 
 
+# オリジナル
 # # Color Palette
 # export BLACK=0xff181926
 # export WHITE=0xffcad3f5

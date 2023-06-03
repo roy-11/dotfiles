@@ -3,7 +3,7 @@
 FRONT_APP_SCRIPT='sketchybar --set $NAME label="$INFO"'
 
 yabai=(
-  # script="$PLUGIN_DIR/yabai.sh"
+  # script="$PLUGIN_DIR/yabai.sh" # スペースの右隣にアプリイコンを表示したくない場合はコメントアウト
   icon.font="$FONT:Bold:16.0"
   label.drawing=off
   icon.width=30
