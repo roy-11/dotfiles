@@ -190,6 +190,8 @@ cask "rectangle"
 cask "sf-symbols"
 # Team communication and collaboration software
 cask "slack"
+# Music streaming service
+cask "spotify"
 # Task manager for teams
 cask "taskade"
 # To-do & task list manager
@@ -206,6 +208,7 @@ cask "vmware-fusion"
 cask "wacom-tablet"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "BetterSnapTool", id: 417375580
 mas "ComicViewer", id: 1455702185
 mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
