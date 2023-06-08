@@ -2,9 +2,9 @@
 
 echo "\n<<< Starting shell-gpt Setup >>>\n"
 
-# Rust インストール
+# shellgpt インストール
 if [ -e $(pyenv root)/shims/sgpt ]; then
   echo "shell-gpt has already installed"
 else
-  pip install shell-gpt==0.8.3
+  pip install shell-gpt==0.9.0
 fi
