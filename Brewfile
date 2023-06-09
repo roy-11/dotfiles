@@ -55,6 +55,8 @@ brew "gh"
 brew "git"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Perceptual JPEG encoder
 brew "guetzli"
 # Post-modern modal text editor
