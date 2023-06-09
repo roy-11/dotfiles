@@ -34,3 +34,18 @@ end, {
   expr = true,
   desc = "print a variable",
 })
+
+-- ChatGPT.nvim
+map("n", "<Space>cgi", "<cmd>ChatGPT<CR>", { desc = "normal interactive window" })
+map("n", "<Space>cga", "<cmd>ChatGPTActAs<CR>", { desc = "open prompt selection" })
+map("n", "<Space>cge", "<cmd>ChatGPTEditWithInstructions<CR>", { desc = "edit interactive window" })
+map("n", "<Space>cgrg", "<cmd>ChatGPTRun grammar_correction<CR>", { desc = "grammar_correction" })
+map("n", "<Space>cgrt", "<cmd>ChatGPTRun translate<CR>", { desc = "translate" })
+map("n", "<Space>cgrk", "<cmd>ChatGPTRun keywords<CR>", { desc = "keywords" })
+map("n", "<Space>cgrd", "<cmd>ChatGPTRun docstring<CR>", { desc = "docstring" })
+map("n", "<Space>cgra", "<cmd>ChatGPTRun add_tests<CR>", { desc = "add_tests" })
+map("n", "<Space>cgrs", "<cmd>ChatGPTRun summarize<CR>", { desc = "summarize" })
+map("n", "<Space>cgrf", "<cmd>ChatGPTRun fix_bugs<CR>", { desc = "fix_bugs" })
+map("n", "<Space>cgre", "<cmd>ChatGPTRun explain_code<CR>", { desc = "explain_code" })
+map("n", "<Space>cgrr", "<cmd>ChatGPTRun roxygen_edit<CR>", { desc = "roxygen_edit" })
+map("n", "<Space>cgrc", "<cmd>ChatGPTRun code_readability_analysis<CR>", { desc = "code_readability_analysis" })
