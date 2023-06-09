@@ -31,6 +31,8 @@ brew "bat"
 brew "bottom"
 # Console Matrix
 brew "cmatrix"
+# C library implementing the SSH2 protocol
+brew "libssh2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Modern replacement for 'ls'
@@ -59,6 +61,8 @@ brew "guetzli"
 brew "helix"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Network authentication protocol
+brew "krb5"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Simple terminal UI for git commands
@@ -71,10 +75,14 @@ brew "mas"
 brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
+# CLI for MySQL with auto-completion and syntax highlighting
+brew "mycli"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
