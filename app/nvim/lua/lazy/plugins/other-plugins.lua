@@ -1,5 +1,4 @@
 return {
-  { "nvim-lua/plenary.nvim" },
   { "szw/vim-maximizer" },
   { "rafamadriz/friendly-snippets" },
   { "inkarkat/vim-ReplaceWithRegister" },
@@ -14,6 +13,4 @@ return {
     end,
   },
   { "thinca/vim-quickrun" },
-  { "easymotion/vim-easymotion" },
-  { "justinmk/vim-sneak" },
 }
