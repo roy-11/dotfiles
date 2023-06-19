@@ -31,6 +31,7 @@ yabai -m config mouse_action2 resize
 yabai -m mouse_drop_action swap
 
 # 特定のアプリをyabaiで管理できないようにする
+# アプリ名の検索クエリ：yabai -m query --windows | jq ".[] | { App: .app, Title: .title }"
 # https://github.com/koekeishiya/yabai/issues/1125
 # https://github.com/koekeishiya/yabai/issues/675
 yabai -m rule --add app="^System Settings$" manage=off mouse_follows_focus=off
@@ -42,6 +43,7 @@ yabai -m rule --add app="^Cursor Pro$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="^Numi$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="^iStat Menus Status$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="iStat Menus.*" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^CleanMyMac X$" manage=off mouse_follows_focus=off
 
 # ボーダーカラー設定
 yabai -m config window_border on 
