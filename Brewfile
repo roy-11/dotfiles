@@ -29,6 +29,8 @@ brew "awscli"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
 # Console Matrix
 brew "cmatrix"
 # C library implementing the SSH2 protocol

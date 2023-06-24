@@ -49,3 +49,11 @@ map("n", "<Space>cgrf", "<cmd>ChatGPTRun fix_bugs<CR>", { desc = "fix_bugs" })
 map("n", "<Space>cgre", "<cmd>ChatGPTRun explain_code<CR>", { desc = "explain_code" })
 map("n", "<Space>cgrr", "<cmd>ChatGPTRun roxygen_edit<CR>", { desc = "roxygen_edit" })
 map("n", "<Space>cgrc", "<cmd>ChatGPTRun code_readability_analysis<CR>", { desc = "code_readability_analysis" })
+
+-- Image
+map(
+  "n",
+  "<Space>fi",
+  "<cmd>lua require('telescope').extensions.media_files.media_files()<CR>",
+  { desc = "preview images" }
+)
