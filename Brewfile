@@ -151,6 +151,8 @@ cask "docker"
 cask "firefox"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
 cask "font-ricty-diminished"
 # Developer targeted fonts with a high number of glyphs
 cask "font-symbols-only-nerd-font"
