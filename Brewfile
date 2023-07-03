@@ -55,6 +55,8 @@ brew "gdu"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Prevents you from committing sensitive information to a git repo
+brew "git-secrets"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
@@ -86,7 +88,7 @@ brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
+brew "openssl@3", link: false
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
