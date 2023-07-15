@@ -44,6 +44,8 @@ yabai -m rule --add app="^Numi$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="^iStat Menus Status$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="iStat Menus.*" manage=off mouse_follows_focus=off
 yabai -m rule --add app="^CleanMyMac X$" manage=off mouse_follows_focus=off
+yabai -m rule --add app="^Arc$" subrole="AXSystemDialog" manage=off mouse_follows_focus=off # Arcのダイアログ(動画など)
+yabai -m rule --add app="^UserNotificationCenter$" manage=off mouse_follows_focus=off # 通知センター
 
 # ボーダーカラー設定
 yabai -m config window_border on 
