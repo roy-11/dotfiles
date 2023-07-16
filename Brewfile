@@ -17,8 +17,6 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Companion library to apr, the Apache Portable Runtime library
-brew "apr-util"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Text processing system for reStructuredText
@@ -35,8 +33,6 @@ brew "chafa"
 brew "cmatrix"
 # C library implementing the SSH2 protocol
 brew "libssh2"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
 # GNU compiler collection
@@ -67,8 +63,6 @@ brew "guetzli"
 brew "helix"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
-brew "krb5"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Simple terminal UI for git commands
@@ -87,8 +81,6 @@ brew "mycli"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3", link: false
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
