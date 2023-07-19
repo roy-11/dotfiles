@@ -1,0 +1,14 @@
+- brew bundleのアップデート時にSQLのクエリを実行するとアプリがクラッシュするバグ対応
+  https://developer.apple.com/forums/thread/724378
+  8.0.32以降が現在のOSで使用できないことを確認
+  8.0.31を下記URLから手動インストールしたところ従来通り正常に動作することを確認
+  https://downloads.mysql.com/archives/workbench/
+  /opt/homebrew/Caskroom/mysqlworkbench
+  
+  brew installでは過去のバージョンをインストールする方法は正式にはない
+  以下のコマンドでインストールできるが、8.0.31はエラーによりインストールができなかった
+  curl -O https://raw.githubusercontent.com/Homebrew/homebrew-cask/9183f16ddb149388e081506ec0436a0b5967fb56/Casks/mysqlworkbench.rb && brew install ./mysqlworkbench.rb
+  curl -O https://raw.githubusercontent.com/Homebrew/homebrew-cask/208c89f72974f469e5d8235490c03db138d7ce01/Casks/mysqlworkbench.rb && brew install ./mysqlworkbench.rb
+  https://itnext.io/how-to-install-an-older-brew-package-add141e58d32
+  https://stackoverflow.com/a/65946969
+  /Applications/MySQLWorkbench.app/Contents/

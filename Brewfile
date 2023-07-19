@@ -180,8 +180,6 @@ cask "linear-linear"
 cask "microsoft-edge"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
-# Visual tool to design, develop and administer MySQL servers
-cask "mysqlworkbench"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Calculator and converter application
