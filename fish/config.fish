@@ -2,6 +2,9 @@
 source ~/.aliases
 source ~/.variables
 
+# グリーティングメッセージを無効
+set -U fish_greeting
+
 # homebrew
 eval (/opt/homebrew/bin/brew shellenv)
 
