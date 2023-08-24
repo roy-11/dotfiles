@@ -45,6 +45,9 @@
     # git
     ~/.gitconfig:
     ~/.gitignore_global:
+    ~/Library/Application Support/lazygit/config.yml:
+      force: true
+      path: app/lazygit/config.yml
 
     # others
     ~/.config/karabiner:
@@ -71,7 +74,6 @@
     ~/.config/shell_gpt:
       create: true
       path: app/shellgpt
-
 
 - shell:
     - command: ./setup_homebrew.sh
