@@ -1,2 +1,3 @@
 os:
+  # open: "nvr {{filename}}" なぜかこの行がないとeditが正常に動作しない
   edit: "nvr {{filename}}"
