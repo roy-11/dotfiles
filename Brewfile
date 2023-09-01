@@ -27,12 +27,16 @@ brew "awscli"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Console Matrix
 brew "cmatrix"
 # C library implementing the SSH2 protocol
 brew "libssh2"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
 # GNU compiler collection
@@ -81,6 +85,8 @@ brew "mycli"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Control nvim processes using `nvr` command-line tool
+brew "neovim-remote"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
@@ -133,6 +139,8 @@ cask "bettertouchtool"
 cask "brave-browser"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
+# Screen capturing tool
+cask "cleanshot"
 # C and C++ IDE
 cask "clion"
 # IDE for C, C++, PHP and Node.js
