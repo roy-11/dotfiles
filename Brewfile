@@ -9,6 +9,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
+tap "oven-sh/bun"
 # Color management engine supporting ICC profiles
 brew "little-cms2"
 # Image format providing lossless and lossy compression for web images
@@ -123,6 +124,8 @@ brew "heroku/brew/heroku"
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application launcher and productivity software
