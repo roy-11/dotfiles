@@ -4,7 +4,10 @@ return {
   { "inkarkat/vim-ReplaceWithRegister" },
   { "jose-elias-alvarez/typescript.nvim" },
   { "mg979/vim-visual-multi" },
-  { "christoomey/vim-tmux-navigator" },
+  {
+    "christoomey/vim-tmux-navigator",
+    event = "BufReadPre", -- https://github.com/LazyVim/LazyVim/issues/1502
+  },
   { "folke/zen-mode.nvim" },
   {
     "andrewferrier/debugprint.nvim",
