@@ -21,6 +21,10 @@ map("n", "x", '"_x', { desc = "x but not register" })
 map("n", "PP", '"0p', { desc = "paste the last y yunk" })
 map("n", "<Space><CR>", "O<ESC>", { desc = "create new line" })
 map("n", "<Space>cp", "<cmd>let @+=expand('%:p')<CR>", { desc = "copy file path" })
+map("n", "∂", ":m .-2<CR>==", { desc = "shift up one line" }) -- alt + kがyabaiとの競合で使用できないためalt + d
+map("v", "∂", ":m '<-2<CR>gv-gv", { desc = "shift up one line in visual" }) -- alt + kがyabaiとの競合で使用できないためalt + d
+map("n", "ƒ", ":m .+1<CR>==", { desc = "shift down one line" }) -- alt + jがyabaiとの競合で使用できないためalt + f
+map("v", "ƒ", ":m '>+1<CR>gv-gv", { desc = "shift down one line in visual" }) -- alt + jがyabaiとの競合で使用できないためalt + f
 
 ----------------------
 -- Plugin Keybinds
@@ -34,6 +38,11 @@ end, {
   expr = true,
   desc = "print a variable",
 })
+
+-- vim-tmux-navigatorとの競合のためCtrl-j,kは使用できないためalt + c,kに変更
+-- 一行上下にマルチカーソルを作成
+map("n", "ç", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<CR>", { desc = "● Create multi-cursor up" })
+map("n", "√", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<CR>", { desc = "● Create multi-cursor down" })
 
 -- ChatGPT.nvim
 map("n", "<Space>cgi", "<cmd>ChatGPT<CR>", { desc = "normal interactive window" })
