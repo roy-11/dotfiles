@@ -55,5 +55,5 @@ alias sketchystop='brew services stop sketchybar'
 
 # others
 alias pwdc='pwd | tr -d "\n" | pbcopy'
-alias delss='find ~/Screenshots -type f -name "スクリーン*" -or -name "Clean*" -print0 | xargs -0 rm'
+alias delss='find ~/Screenshots -type f -name "スクリーン*" -print0 -or -name "Clean*" -print0 | xargs -0 rm'
 alias typing='ttyper'
