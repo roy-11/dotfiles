@@ -6,7 +6,7 @@ return {
   { "mg979/vim-visual-multi" },
   {
     "christoomey/vim-tmux-navigator",
-    event = "BufReadPre", -- https://github.com/LazyVim/LazyVim/issues/1502
+    event = "BufReadPre", -- https://github.com/LazyVim/LazyVim/issues/1502 ファイルを一度開く必要あり
   },
   { "folke/zen-mode.nvim" },
   {
