@@ -7,6 +7,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='~/.dotfiles/common/scripts.sh gl'
+alias gcz='git-cz --disable-emoji'
 alias lg='lazygit'
 
 # cd
