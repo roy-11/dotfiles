@@ -10,21 +10,28 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    -- import any extras modules here
-    { import = "lazyvim.plugins.extras.lang.typescript" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.ui.mini-animate" },
-    -- import/override with your plugins
-    { import = "plugins" },
 
-    -- 追記
+    -- import any extras modules here
+    -- フォーマット・リンティング
     { import = "lazyvim.plugins.extras.linting.eslint" }, -- 追加：eslint
     { import = "lazyvim.plugins.extras.formatting.prettier" }, -- 追加：prettier
+
+    -- コーディング
     { import = "lazyvim.plugins.extras.coding.copilot" }, -- 追加：copilot
     { import = "lazyvim.plugins.extras.coding.codeium" }, -- 追加：codeium
+
+    -- 言語
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.tailwind" }, -- 追加：tailwind
     { import = "lazyvim.plugins.extras.lang.docker" }, -- 追加： dokcer
     { import = "lazyvim.plugins.extras.lang.yaml" }, -- 追加：yaml
+
+    -- UI
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
+
+    -- import/override with your plugins
+    { import = "plugins" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
