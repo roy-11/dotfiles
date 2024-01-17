@@ -40,6 +40,15 @@ end, {
   desc = "print a variable",
 })
 
+-- 検索
+map("n", "<leader>sq", "<cmd>Telescope quickfix<CR>", { desc = "quickfix" })
+map(
+  "n",
+  "<leader>sl",
+  "<cmd>lua require('telescope.builtin').live_grep({ additional_args = function() return {'--multiline'} end })<CR>",
+  { desc = "multiline" }
+)
+
 -- vim-tmux-navigatorとの競合のためCtrl-j,kは使用できないためalt + c,kに変更
 -- 一行上下にマルチカーソルを作成
 map("n", "ç", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<CR>", { desc = "● Create multi-cursor up" })
