@@ -22,6 +22,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.formatting.prettier" }, -- 追加：prettier
     { import = "lazyvim.plugins.extras.coding.copilot" }, -- 追加：copilot
     { import = "lazyvim.plugins.extras.coding.codeium" }, -- 追加：codeium
+    { import = "lazyvim.plugins.extras.lang.tailwind" }, -- 追加：tailwind
+    { import = "lazyvim.plugins.extras.lang.docker" }, -- 追加： dokcer
+    { import = "lazyvim.plugins.extras.lang.yaml" }, -- 追加：yaml
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
