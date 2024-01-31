@@ -1,4 +1,5 @@
 tap "daipeihust/tap"
+tap "dimentium/autoraise"
 tap "felixkratz/formulae"
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -18,10 +19,14 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Text processing system for reStructuredText
 brew "docutils"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -42,6 +47,8 @@ brew "curl"
 brew "exa"
 # GNU compiler collection
 brew "gcc"
+# High performance message passing library
+brew "open-mpi"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -60,6 +67,10 @@ brew "git"
 brew "git-secrets"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Perceptual JPEG encoder
@@ -72,6 +83,8 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Postgres C API library
+brew "libpq"
 # Powerful, lightweight programming language
 brew "lua"
 # Mac App Store command-line interface
@@ -80,6 +93,8 @@ brew "mas"
 brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
+# Cryptographic recipes and primitives for Python
+brew "python-cryptography"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Fast, highly customisable system info script
@@ -116,6 +131,8 @@ brew "tldr"
 brew "tmux"
 # Switch your input method through terminal
 brew "daipeihust/tap/im-select"
+# Focus-follows-mouse for MacOS
+brew "dimentium/autoraise/autoraise"
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
 # Everything you need to get started with Heroku

@@ -10,3 +10,6 @@ export HOMEBREW_CASK_OPTS="--no-quarantie"
 
 # Brewfileのインストール
 brew bundle --verbose
+
+# 自動起動するようにする
+brew services start autoraise # カーソルをウインドウにずらすと自動フォーカス
