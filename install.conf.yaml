@@ -74,6 +74,9 @@
     ~/.config/shell_gpt:
       create: true
       path: app/shellgpt
+    ~//Documents/Obsidian Vault/.obsidian.vimrc:
+      create: true
+      path: app/obsidian/.obsidian.vimrc
 
 - shell:
     - command: ./setup_homebrew.sh
