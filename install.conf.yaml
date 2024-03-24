@@ -74,7 +74,7 @@
     ~/.config/shell_gpt:
       create: true
       path: app/shellgpt
-    ~//Documents/Obsidian Vault/.obsidian.vimrc:
+    ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian Vault/.obsidian.vimrc:
       create: true
       path: app/obsidian/.obsidian.vimrc
 
