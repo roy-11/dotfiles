@@ -39,6 +39,8 @@ brew "librsvg"
 brew "chafa"
 # Console Matrix
 brew "cmatrix"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # C library implementing the SSH2 protocol
 brew "libssh2"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -93,8 +95,6 @@ brew "mas"
 brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
-# Cryptographic recipes and primitives for Python
-brew "python-cryptography"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Fast, highly customisable system info script
@@ -153,10 +153,12 @@ cask "alt-tab"
 cask "anki"
 # Chromium based browser
 cask "arc"
-# Tool to customize input devices and automate computer systems
+# Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
 # Web browser focusing on privacy
 cask "brave-browser"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -169,8 +171,10 @@ cask "codelite"
 cask "deepl"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
+# App for note taking, organising, task lists, and archiving
+cask "evernote"
 # Web browser
 cask "firefox"
 # Developer targeted fonts with a high number of glyphs
@@ -188,13 +192,13 @@ cask "google-chrome"
 cask "google-drive"
 # Utility to hide menu bar items
 cask "hiddenbar"
-# Tool to optimize images to a smaller size
+# Tool to optimise images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Plays sound effects as you type
 cask "jazzup"
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements"
 # Interface for reading and syncing eBooks
 cask "kindle"
@@ -230,6 +234,8 @@ cask "spotify"
 cask "taskade"
 # To-do & task list manager
 cask "ticktick"
+# VPN client for secure internet access and private browsing
+cask "tunnelbear"
 # Development environment
 cask "vagrant"
 # Gives Vagrant VMware plugin access to various VMware functionalities
@@ -238,8 +244,6 @@ cask "vagrant-vmware-utility"
 cask "visual-studio-code"
 # Create, manage, and run virtual machines
 cask "vmware-fusion"
-# Resources for Wacom tablets
-cask "wacom-tablet"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "BetterSnapTool", id: 417375580
