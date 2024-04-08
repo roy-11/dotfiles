@@ -31,7 +31,9 @@ map("v", "ƒ", ":m '>+1<CR>gv-gv", { desc = "shift down one line in visual" }) -
 -- Plugin Keybinds
 ----------------------
 
-map("n", "<Space>r", "<cmd>QuickRun<CR>", { desc = "run this file" })
+map("n", "<Space>rf", "<cmd>QuickRun<CR>", { desc = "run this file" })
+map("n", "<leader>rr", "<cmd>Rest run<cr>", { desc = "Run request under the cursor" })
+map("n", "<leader>re", "<cmd>Telescope rest select_env<cr>", { desc = "Run request under the cursor" })
 
 map("n", "<leader>;", function()
   return require("debugprint").debugprint({ variable = true })

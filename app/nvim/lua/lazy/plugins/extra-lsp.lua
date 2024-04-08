@@ -21,6 +21,8 @@ return {
         "yaml",
         "graphql", -- 追加
         "prisma", -- 追加
+        "http", -- 追加
+        "xml", -- 追加
       },
     },
   },
