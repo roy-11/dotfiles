@@ -41,6 +41,15 @@ return {
     config = function()
       require("rest-nvim").setup()
       require("telescope").load_extension("rest")
+      require("rest-nvim").setup({
+        result = {
+          keybinds = {
+            buffer_local = false,
+            next = "J",
+            prev = "K",
+          },
+        },
+      })
     end,
   },
 }
