@@ -47,6 +47,8 @@ brew "libssh2"
 brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # GNU compiler collection
 brew "gcc"
 # High performance message passing library
@@ -157,8 +159,6 @@ cask "arc"
 cask "bettertouchtool"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Opensource IDE for exploring and testing api's
-cask "bruno"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -251,7 +251,7 @@ mas "ComicViewer", id: 1455702185
 mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
-mas "GoodNotes", id: 1444383602
+mas "Goodnotes", id: 1444383602
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "MouseCatch", id: 1625127067
