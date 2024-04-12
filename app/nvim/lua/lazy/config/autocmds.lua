@@ -15,6 +15,13 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   command = ":silent !/opt/homebrew/bin/im-select com.apple.keylayout.ABC",
 })
 
+-- Hurl ファイルを開いたときにファイルタイプを自動設定
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  group = augroup("hurl_files"),
+  pattern = "*.hurl",
+  command = "set filetype=hurl",
+})
+
 -- Check if we need to reload the file when it changed
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
   group = augroup("checktime"),

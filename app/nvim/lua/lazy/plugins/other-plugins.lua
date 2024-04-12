@@ -52,4 +52,34 @@ return {
       })
     end,
   },
+  {
+    "jellydn/hurl.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    ft = "hurl",
+    opts = {
+      debug = false,
+      show_notification = false,
+      mode = "popup",
+      formatters = {
+        json = { "jq" },
+        html = {
+          "prettier",
+          "--parser",
+          "html",
+        },
+      },
+    },
+    keys = {
+      { "<leader>rA", "<cmd>HurlRunner<CR>", desc = "Run All requests" },
+      { "<leader>ra", "<cmd>HurlRunnerAt<CR>", desc = "Run Api request" },
+      { "<leader>rte", "<cmd>HurlRunnerToEntry<CR>", desc = "Run Api request to entry" },
+      { "<leader>rtm", "<cmd>HurlToggleMode<CR>", desc = "Hurl Toggle Mode" },
+      { "<leader>rtv", "<cmd>HurlVerbose<CR>", desc = "Run Api in verbose mode" },
+      { "<leader>rh", ":HurlRunner<CR>", desc = "Hurl Runner", mode = "v" },
+    },
+  },
 }

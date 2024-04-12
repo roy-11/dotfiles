@@ -23,6 +23,7 @@ return {
         "prisma", -- 追加
         "http", -- 追加
         "xml", -- 追加
+        "hurl", -- 追加
       },
     },
   },
