@@ -88,7 +88,7 @@ return {
       "3rd/image.nvim",
       dependencies = { "luarocks.nvim" },
       config = function()
-        require("image").setup()
+        -- require("image").setup() kitty以外でエラーが出ないよう必要に応じて実行
       end,
     },
   },
