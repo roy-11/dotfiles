@@ -31,8 +31,11 @@ return {
   },
   {
     "vhyrro/luarocks.nvim",
-    priority = 1000,
+    priority = 1001,
     config = true,
+    opts = {
+      rocks = { "magick" },
+    },
   },
   {
     "rest-nvim/rest.nvim",
@@ -80,6 +83,13 @@ return {
       { "<leader>rtm", "<cmd>HurlToggleMode<CR>", desc = "Hurl Toggle Mode" },
       { "<leader>rtv", "<cmd>HurlVerbose<CR>", desc = "Run Api in verbose mode" },
       { "<leader>rh", ":HurlRunner<CR>", desc = "Hurl Runner", mode = "v" },
+    },
+    {
+      "3rd/image.nvim",
+      dependencies = { "luarocks.nvim" },
+      config = function()
+        require("image").setup()
+      end,
     },
   },
 }
