@@ -47,20 +47,21 @@ yabai -m rule --add app="^CleanMyMac X$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="^Raycast$" manage=off mouse_follows_focus=off
 yabai -m rule --add app="^CleanShot X$" manage=off mouse_follows_focus=off border=off # border=offにしないとエラーが発生（https://github.com/koekeishiya/yabai/issues/1471）
 yabai -m rule --add app="^Arc$" subrole="AXSystemDialog" manage=off mouse_follows_focus=off # Arcのダイアログ(動画など)
+yabai -m rule --add app="^Arc$" split-child="second_child" manage=off mouse_follows_focus=off # Arcの拡張機能ウインドウ(動画など)
 yabai -m rule --add app="^UserNotificationCenter$" manage=off mouse_follows_focus=off # 通知センター
 yabai -m rule --add app="^Finder$" manage=off mouse_follows_focus=off 
 yabai -m rule --add app="^TickTick$" title="名称未設定" manage=off mouse_follows_focus=off 
 
 # ボーダーカラー設定
-yabai -m config window_border on 
+yabai -m config window_border off
 yabai -m config active_window_border_color 0x4DD0E2BE
 yabai -m config normal_window_border_color 0xFF000000
 yabai -m config insert_feedback_color 0xFF88C0D0
 
-# 全てのフォーカスしていないウィンドウのopacityを0.3にする
+# 全てのフォーカスしていないウィンドウのopacityを0.8にする
 yabai -m config window_opacity on
-yabai -m config active_window_opacity 1.0
-# yabai -m config normal_window_opacity 0.8
+# yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.9
 
 # Sketchybarとの連携
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
