@@ -19,12 +19,6 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Text processing system for reStructuredText
-brew "docutils"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Official Amazon AWS command-line interface
@@ -33,6 +27,16 @@ brew "awscli"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# Vector graphics library with cross-device output support
+brew "cairo"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
@@ -45,6 +49,8 @@ brew "cryptography"
 brew "libssh2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Text processing system for reStructuredText
+brew "docutils"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -75,12 +81,20 @@ brew "gnu-sed"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Assuan IPC Library
+brew "libassuan"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Perceptual JPEG encoder
 brew "guetzli"
 # Post-modern modal text editor
 brew "helix"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Lazier way to manage everything docker
