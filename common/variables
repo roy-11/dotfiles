@@ -10,3 +10,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 # homebrewのゲートキーパーを表示しないようにする
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+# fzf デフォルトのfindの代わりにfdを使用する
+export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
+export FZF_CTRL_T_COMMAND='fd --type=f --hidden --strip-cwd-prefix --exclude .git'
+export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
