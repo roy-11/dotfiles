@@ -77,6 +77,9 @@
     ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian Vault/.obsidian.vimrc:
       create: true
       path: app/obsidian/.obsidian.vimrc
+    ~/.config/bat:
+      create: true
+      path: app/bat
 
 - shell:
     - command: ./setup_homebrew.sh
