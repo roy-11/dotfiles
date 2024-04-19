@@ -1,5 +1,6 @@
 # ls
-alias ls='exa -laFh --git'
+alias l="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza -lah -F --git --icons=always"
 alias tree='~/.dotfiles/common/scripts.sh tree'
 
 # git
