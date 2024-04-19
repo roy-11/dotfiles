@@ -143,6 +143,8 @@ brew "shellcheck"
 brew "starship"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer

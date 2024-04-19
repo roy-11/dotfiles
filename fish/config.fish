@@ -18,6 +18,9 @@ eval (pyenv init - | source)
 fzf --fish | source
 fzf_configure_bindings --processes=\cp
 
+# the fuck
+thefuck --alias fk | source
+
 if status is-interactive
     # starship
     starship init fish | source
