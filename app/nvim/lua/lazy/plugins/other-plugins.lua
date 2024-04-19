@@ -66,12 +66,12 @@ return {
       { "<leader>rtv", "<cmd>HurlVerbose<CR>", desc = "Run Api in verbose mode" },
       { "<leader>rh", ":HurlRunner<CR>", desc = "Hurl Runner", mode = "v" },
     },
-    {
-      "3rd/image.nvim",
-      dependencies = { "luarocks.nvim" },
-      config = function()
-        -- require("image").setup() kitty以外でエラーが出ないよう必要に応じて実行
-      end,
-    },
+  },
+  {
+    "3rd/image.nvim",
+    dependencies = { "luarocks.nvim" },
+    config = function()
+      -- require("image").setup() kitty以外でエラーが出ないよう必要に応じて実行
+    end,
   },
 }
