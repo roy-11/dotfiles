@@ -21,4 +21,4 @@ end
 
 # プラグインインストール
 fisher install jethrokuan/z
-fisher install oh-my-fish/plugin-peco
+fisher install PatrickF1/fzf.fish

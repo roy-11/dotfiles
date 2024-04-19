@@ -14,6 +14,10 @@ eval (nodenv init - | source)
 # pyenv
 eval (pyenv init - | source)
 
+# fzf
+fzf --fish | source
+fzf_configure_bindings --processes=\cp
+
 if status is-interactive
     # starship
     starship init fish | source
