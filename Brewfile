@@ -73,6 +73,8 @@ brew "gdu"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
 # GNU implementation of the famous stream editor
