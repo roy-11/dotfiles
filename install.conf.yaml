@@ -80,6 +80,9 @@
     ~/.config/bat:
       create: true
       path: app/bat
+    ~/.hammerspoon:
+      create: true
+      path: app/hammerspoon
 
 - shell:
     - command: ./setup_homebrew.sh

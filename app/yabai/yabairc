@@ -51,6 +51,9 @@ yabai -m rule --add app="^Arc$" split-child="second_child" manage=off mouse_foll
 yabai -m rule --add app="^UserNotificationCenter$" manage=off mouse_follows_focus=off # 通知センター
 yabai -m rule --add app="^Finder$" manage=off mouse_follows_focus=off 
 yabai -m rule --add app="^TickTick$" title="名称未設定" manage=off mouse_follows_focus=off 
+yabai -m rule --add app='^Arc$' manage=off # hammerspoonで起動したウインドウは無視させる
+yabai -m rule --add app='^Slack$' manage=off # hammerspoonで起動したウインドウは無視させる
+yabai -m rule --add app='^Obsidian$' manage=off # hammerspoonで起動したウインドウは無視させる
 
 # ボーダーカラー設定
 yabai -m config window_border off

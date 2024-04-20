@@ -208,6 +208,8 @@ cask "gimp"
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
+# Desktop automation application
+cask "hammerspoon"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # Tool to optimise images to a smaller size
