@@ -58,6 +58,6 @@ local function hotkeyWindow(modifier, appName)
   end)
 end
 
-hotkeyWindow("S", "Slack")
-hotkeyWindow("A", "Arc")
+-- hotkeyWindow("S", "Slack")
+-- hotkeyWindow("A", "Arc")
 hotkeyWindow("O", "Obsidian")
