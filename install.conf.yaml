@@ -83,6 +83,9 @@
     ~/.hammerspoon:
       create: true
       path: app/hammerspoon
+    ~/.config/btop:
+      create: true
+      path: app/btop
 
 - shell:
     - command: ./setup_homebrew.sh

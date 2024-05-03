@@ -27,6 +27,10 @@ brew "awscli"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
+# GNU compiler collection
+brew "gcc"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # C parser in Python
@@ -55,8 +59,6 @@ brew "docutils"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# GNU compiler collection
-brew "gcc"
 # High performance message passing library
 brew "open-mpi"
 # User-friendly command-line shell for UNIX-like operating systems
