@@ -97,10 +97,14 @@ brew "gnupg"
 brew "guetzli"
 # Post-modern modal text editor
 brew "helix"
+# Uses CSS selectors to extract bits content from HTML files
+brew "htmlq"
 # Run and Test HTTP Requests with plain text and curl
 brew "hurl"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Command-line pager for JSON data
+brew "jless"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Lazier way to manage everything docker
@@ -282,7 +286,6 @@ mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
 mas "Goodnotes", id: 1444383602
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "MouseCatch", id: 1625127067
 mas "Numbers", id: 409203825
