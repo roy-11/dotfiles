@@ -17,7 +17,7 @@ alias desk='cd ~/Desktop'
 
 # pc
 alias allps='ps aux'
-alias du1='du -d 1'
+alias du1='du -h -d 1'
 
 # homebrew
 alias bbd='brew bundle dump --force --describe'
