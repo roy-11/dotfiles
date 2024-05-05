@@ -93,6 +93,8 @@ brew "libassuan"
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task"
 # Perceptual JPEG encoder
 brew "guetzli"
 # Post-modern modal text editor
