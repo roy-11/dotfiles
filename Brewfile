@@ -252,6 +252,8 @@ cask "microsoft-edge"
 cask "mongodb-compass"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Calculator and converter application
@@ -290,6 +292,7 @@ mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
 mas "Goodnotes", id: 1444383602
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "MouseCatch", id: 1625127067
 mas "Numbers", id: 409203825

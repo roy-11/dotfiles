@@ -44,6 +44,9 @@ alias michi='~/.dotfiles/common/scripts.sh michi'
 # docker
 alias ld='lazydocker'
 
+# virtual machine
+alias mp='multipass'
+
 # yabai and skhd
 alias yabaistart='yabai --start-service'
 alias yabairestart='yabai --restart-service'
