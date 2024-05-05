@@ -59,6 +59,12 @@ brew "docutils"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Create thumbnails for your video files
+brew "ffmpegthumbnailer"
 # High performance message passing library
 brew "open-mpi"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -81,10 +87,6 @@ brew "git-delta"
 brew "git-secrets"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
 # Assuan IPC Library
 brew "libassuan"
 # Passphrase entry dialog utilizing the Assuan protocol
@@ -131,6 +133,8 @@ brew "nodenv"
 brew "peco"
 # General-purpose scripting language
 brew "php"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Python version management
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
@@ -151,6 +155,10 @@ brew "thefuck"
 brew "tldr"
 # Terminal multiplexer
 brew "tmux"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Switch your input method through terminal
 brew "daipeihust/tap/im-select"
 # Focus-follows-mouse for MacOS
