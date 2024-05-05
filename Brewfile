@@ -121,6 +121,8 @@ brew "mas"
 brew "minikube"
 # Improved JPEG encoder
 brew "mozjpeg"
+# Run multiple commands in parallel
+brew "mprocs"
 # CLI for MySQL with auto-completion and syntax highlighting
 brew "mycli"
 # Fast, highly customisable system info script
