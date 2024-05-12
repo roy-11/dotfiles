@@ -11,8 +11,8 @@ set clipboard=unnamed
 nnoremap Y y$
 
 " タブの移動 
-exmap nextTab obcommand workspace:next-tab
-exmap prevTab obcommand workspace:previous-tab
+exmap nextTab obcommand app:go-back
+exmap prevTab obcommand app:go-forward
 nnoremap L :nextTab
 nnoremap H :prevTab
 
