@@ -23,6 +23,8 @@ brew "aom"
 brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# C library implementing the SSH2 protocol
+brew "libssh2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
@@ -49,8 +51,6 @@ brew "chafa"
 brew "cmatrix"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
-# C library implementing the SSH2 protocol
-brew "libssh2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Text processing system for reStructuredText
@@ -195,6 +195,8 @@ cask "arc"
 cask "bettertouchtool"
 # Web browser focusing on privacy
 cask "brave-browser"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -230,6 +232,8 @@ cask "google-drive"
 cask "hammerspoon"
 # Utility to hide menu bar items
 cask "hiddenbar"
+# Free and open-source media player
+cask "iina"
 # Tool to optimise images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -248,6 +252,8 @@ cask "kitty"
 cask "linear-linear"
 # Web browser
 cask "microsoft-edge"
+# Remote desktop client
+cask "microsoft-remote-desktop"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
 # Tool to control external monitor brightness & volume
