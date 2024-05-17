@@ -11,10 +11,10 @@ set clipboard=unnamed
 nnoremap Y y$
 
 " タブの移動 
-exmap nextTab obcommand app:go-back
-exmap prevTab obcommand app:go-forward
-nnoremap L :nextTab
-nnoremap H :prevTab
+exmap goBack obcommand app:go-back
+exmap goForward obcommand app:go-forward
+nnoremap L :goForward
+nnoremap H :goBack
 
 " qでファイルを閉じる
 unmap <Space>
