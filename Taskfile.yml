@@ -1,8 +1,9 @@
 version: "3"
-dotenv: [".env"]
+dotenv: ["{{.HOME}}/.dotfiles/.env"]
 
 tasks:
   keytxt:
+    silent: true
     cmds:
       # https://unix.stackexchange.com/questions/60213/gpg-asks-for-password-even-with-passphrase
-      - gpg --pinentry-mode loopback --passphrase $GPG_PASSPHRASE --decrypt ~/.dotfiles/app/chatgpt.nvim/key.txt.gpg
+      - gpg --pinentry-mode loopback --passphrase $GPG_PASSPHRASE --decrypt --quiet ~/.dotfiles/app/chatgpt.nvim/key.txt.gpg

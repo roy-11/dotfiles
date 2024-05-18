@@ -86,6 +86,9 @@
     ~/.config/btop:
       create: true
       path: app/btop
+    ~/Taskfile.yml:
+      create: true
+      path: Taskfile.yml
 
 - shell:
     - command: ./setup_homebrew.sh

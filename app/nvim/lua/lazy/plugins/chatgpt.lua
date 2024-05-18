@@ -4,7 +4,7 @@ return {
     event = "VeryLazy",
     config = function()
       require("chatgpt").setup({
-        api_key_cmd = "task keytxt",
+        api_key_cmd = "task -g keytxt",
       })
     end,
     dependencies = {
