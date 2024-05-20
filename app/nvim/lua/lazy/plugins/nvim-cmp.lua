@@ -7,6 +7,7 @@ return {
     opts.mapping = cmp.mapping.preset.insert({
       -- 必要なキーマッピングの変更をここに追加
       ["<C-i>"] = cmp.mapping.complete(),
+      ["<Tab>"] = cmp.mapping.complete(), -- tmuxでは<C-i>がTabとして認識されるため、Tabで補完するようにする
       ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
       ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
       ["<C-b>"] = cmp.mapping.scroll_docs(-4),
