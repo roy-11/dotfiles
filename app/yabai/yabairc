@@ -75,6 +75,9 @@ yabai -m rule --add app="^TickTick$" title="名称未設定" manage=off mouse_fo
 # yabai -m rule --apply app='^Slack$' manage=off # hammerspoonで起動したウインドウは無視させる
 yabai -m rule --apply app='^Obsidian$' manage=off # hammerspoonで起動したウインドウは無視させる
 yabai -m rule --add app='^Obsidian$' manage=off # hammerspoonで起動したウインドウは無視させる
+yabai -m rule --apply app='^ChatGPT$' manage=off # hammerspoonで起動したウインドウは無視させる
+yabai -m rule --add app='^ChatGPT$' manage=off # hammerspoonで起動したウインドウは無視させる
+
 
 # ボーダーカラー設定
 yabai -m config window_border off

@@ -61,3 +61,4 @@ end
 -- hotkeyWindow("S", "Slack")
 -- hotkeyWindow("A", "Arc")
 hotkeyWindow("O", "Obsidian")
+hotkeyWindow("I", "ChatGPT")
