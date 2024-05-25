@@ -1,0 +1,56 @@
+/* 太文字の色を継承する */
+.markdown-preview-view strong {
+  color: inherit !important; /* 太文字の色を継承させる */
+  font-weight: bold !important; /* フォントの太さは太字のまま */
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* 編集モード用 */
+.cm-strong {
+  color: inherit !important; /* 太文字の色を継承させる */
+  font-weight: bold !important; /* フォントの太さは太字のまま */
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* 通常の横線にスタイルを設定 */
+.hr.cm-line {
+  border-top: 1px solid; /* 上枠線を1pxのソリッドラインに設定 */
+  background: none; /* 背景をなしに設定 */
+  height: 1px; /* 高さを1pxに設定 */
+}
+
+/* 通常の横線にスタイルを設定 */
+.markdown-preview-view hr {
+  border-image-source: none;
+}
+.markdown-preview-view hr::after {
+  content: none;
+}
+
+/* ヘッダーの色を通常のテキストと同じに設定 */
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  color: inherit !important; /* 色を継承させる */
+}
+
+/* プレビューでのヘッダーの色を通常のテキストと同じに設定 */
+.markdown-preview-section h1,
+.markdown-preview-section h2,
+.markdown-preview-section h3,
+.markdown-preview-section h4,
+.markdown-preview-section h5,
+.markdown-preview-section h6 {
+  color: inherit !important; /* 色を継承させる */
+}
+
+.contains-task-list .task-list-item::before {
+  content: none;
+}
+
+.contains-task-list .is-checked.task-list-item::after {
+  content: none;
+}
