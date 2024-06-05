@@ -11,6 +11,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "oven-sh/bun"
+# Run your GitHub Actions locally
+brew "act"
 # Color management engine supporting ICC profiles
 brew "little-cms2"
 # Image format providing lossless and lossy compression for web images
@@ -65,8 +67,6 @@ brew "unbound"
 brew "gnutls"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
-# High performance message passing library
-brew "open-mpi"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -137,6 +137,8 @@ brew "neovim-remote"
 brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# High performance message passing library
+brew "open-mpi"
 # Simplistic interactive filtering tool
 brew "peco"
 # General-purpose scripting language
@@ -153,6 +155,8 @@ brew "ranger"
 brew "ripgrep"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Python 2 and 3 compatibility utilities
+brew "six"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Tool to build, change, and version infrastructure
@@ -260,8 +264,8 @@ cask "mongodb-compass"
 cask "monitorcontrol"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
-# Reverse proxy, secure introspectable tunnels to localhost
-cask "ngrok"
+# Visual tool to design, develop and administer MySQL servers
+cask "mysqlworkbench"
 # Calculator and converter application
 cask "numi"
 # Knowledge base that works on top of a local folder of plain text Markdown files
