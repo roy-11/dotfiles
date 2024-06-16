@@ -16,8 +16,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.linting.eslint" }, -- 追加：eslint
     { import = "lazyvim.plugins.extras.formatting.prettier" }, -- 追加：prettier
 
-    -- コーディング
+    -- AI
     { import = "lazyvim.plugins.extras.coding.copilot" }, -- 追加：copilot
+    { import = "lazyvim.plugins.extras.coding.copilot-chat" }, -- 追加：copilot-chat
     { import = "lazyvim.plugins.extras.coding.codeium" }, -- 追加：codeium
 
     -- 言語
@@ -26,6 +27,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" }, -- 追加：tailwind
     { import = "lazyvim.plugins.extras.lang.docker" }, -- 追加： dokcer
     { import = "lazyvim.plugins.extras.lang.yaml" }, -- 追加：yaml
+    { import = "lazyvim.plugins.extras.lang.git" }, -- 追加：git
 
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },

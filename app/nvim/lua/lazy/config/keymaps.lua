@@ -31,6 +31,7 @@ map("v", "ƒ", ":m '>+1<CR>gv-gv", { desc = "shift down one line in visual" }) -
 -- Plugin Keybinds
 ----------------------
 
+map("n", "<leader><Space>", LazyVim.pick("auto", { root = false }), { desc = "Find Files (cwd)" })
 map("n", "<Space>rf", "<cmd>QuickRun<CR>", { desc = "run this file" })
 map("n", "<Space>ri", '<cmd>lua require("image").setup()<CR>', { desc = "show image" })
 
