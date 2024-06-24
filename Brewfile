@@ -221,6 +221,8 @@ cask "clion"
 cask "codelite"
 # Trains AIs to understand and translate texts
 cask "deepl"
+# Utilities designed to make common development tasks easier
+cask "devtoys"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
