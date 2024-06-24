@@ -13,6 +13,8 @@ tap "koekeishiya/formulae"
 tap "oven-sh/bun"
 # Run your GitHub Actions locally
 brew "act"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Color management engine supporting ICC profiles
 brew "little-cms2"
 # Image format providing lossless and lossy compression for web images
@@ -49,12 +51,16 @@ brew "pango"
 brew "librsvg"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Cross-platform make
+brew "cmake"
 # Console Matrix
 brew "cmatrix"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# USB programmer
+brew "dfu-util"
 # Text processing system for reStructuredText
 brew "docutils"
 # Modern, maintained replacement for ls
@@ -65,6 +71,8 @@ brew "fd"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -133,6 +141,8 @@ brew "neofetch"
 brew "neovim"
 # Control nvim processes using `nvr` command-line tool
 brew "neovim-remote"
+# Small build system for use with gyp or CMake
+brew "ninja"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
@@ -219,12 +229,9 @@ cask "docker"
 cask "evernote"
 # Web browser
 cask "firefox"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
 cask "font-ricty-diminished"
-# Developer targeted fonts with a high number of glyphs
 cask "font-symbols-only-nerd-font"
 # Free and open-source image editor
 cask "gimp"
@@ -302,7 +309,6 @@ mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
 mas "Goodnotes", id: 1444383602
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "MouseCatch", id: 1625127067
 mas "Numbers", id: 409203825
