@@ -47,6 +47,9 @@ alias ld='lazydocker'
 # virtual machine
 alias mp='multipass'
 
+# sql
+alias lsql='lazysql'
+
 # yabai and skhd
 alias yabaistart='yabai --start-service'
 alias yabairestart='yabai --restart-service'

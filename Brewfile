@@ -9,6 +9,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "jorgerojas26/lazysql"
 tap "koekeishiya/formulae"
 tap "oven-sh/bun"
 # Run your GitHub Actions locally
@@ -189,6 +190,7 @@ brew "dimentium/autoraise/autoraise"
 brew "felixkratz/formulae/sketchybar"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+brew "jorgerojas26/lazysql/lazysql"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
@@ -283,6 +285,8 @@ cask "obsidian"
 cask "qmk-toolbox"
 # Control your tools with a few keystrokes
 cask "raycast"
+# MongoDB management tool
+cask "robo-3t"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Team communication and collaboration software
