@@ -41,10 +41,12 @@ local function hotkeyWindow(modifier, appName)
         local mainScreen = hs.screen.mainScreen():name()
         if string.find(mainScreen, "Retina") then
           app:mainWindow():raise()
-          app:mainWindow():moveToUnit("0.0,0.03,1.0,1.0") -- MacBook本体のディスプレイの場合
+          -- app:mainWindow():moveToUnit("0.0,0.03,1.0,1.0") -- MacBook本体のディスプレイの場合
+          app:mainWindow():moveToUnit("0.005,0.01,1.0,1.0") -- 通常ヘッダー(固定)
         else
           app:mainWindow():raise()
-          app:mainWindow():moveToUnit("0.0,0.055,1.0,1.0") -- 外部ディスプレイの場合
+          -- app:mainWindow():moveToUnit("0.0,0.05,1.0,1.0") -- 外部ディスプレイの場合
+          app:mainWindow():moveToUnit("0.005,0.01,1.0,1.0") -- 通常ヘッダー(固定)
         end
       end
 

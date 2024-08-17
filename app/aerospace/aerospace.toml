@@ -2,7 +2,7 @@ after-login-command = []
 start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
-accordion-padding = 30
+accordion-padding = 0
 default-root-container-layout = 'tiles'
 default-root-container-orientation = 'auto'
 key-mapping.preset = 'qwerty'
@@ -17,16 +17,63 @@ on-focus-changed = "move-mouse window-lazy-center"
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty' # kitty
 run = "move-node-to-workspace T"
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2' # iTerm2 
+run = "move-node-to-workspace T"
 
 ## ブラウザ
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser' # Arc
+run = "move-node-to-workspace B"
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome' # Chrome
+run = "move-node-to-workspace B"
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox' # Firefox
+run = "move-node-to-workspace B"
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser' # Brave
 run = "move-node-to-workspace B"
 
 ## チャット
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap' # Slack
 run = "move-node-to-workspace C"
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord' # Discord
+run = "move-node-to-workspace C"
+
+## その他
+[[on-window-detected]]
+if.app-id = 'net.ankiweb.dtop' # Anki
+run = "move-node-to-workspace O"
+[[on-window-detected]]
+if.app-id = 'com.spotify.client' # Spotify
+run = "move-node-to-workspace O"
+[[on-window-detected]]
+if.app-id = 'com.TickTick.task.mac' # TickTick
+run = "move-node-to-workspace O"
+
+## 対象外
+[[on-window-detected]]
+if.app-id = 'com.apple.finder' # Finder
+run = "layout floating"
+[[on-window-detected]]
+if.app-id = 'md.obsidian' # Obisidan
+run = "layout floating"
+[[on-window-detected]]
+if.app-id = 'com.openai.chat' # ChatGPT
+run = "layout floating"
+[[on-window-detected]]
+if.app-id = 'com.macpaw.CleanMyMac4' # CleanMyMacX
+run = "layout floating"
+[[on-window-detected]]
+if.app-name-regex-substring = '^iStat.*Menus.*Status$'
+run = "layout floating"
+[[on-window-detected]]
+if.app-name-regex-substring = 'iStat.*Menus.*'
+run = "layout floating"
+
 
 [gaps]
 inner.horizontal = 10
@@ -41,6 +88,7 @@ outer.right =      10
 B = ['secondary'] # or 2 , '^(?!.*Built-in).*$'
 T = ['secondary']
 C = ['secondary']
+O = ['secondary']
 
 [mode.main.binding]
 # レイアウト
@@ -65,10 +113,12 @@ alt-1 = 'workspace 1' # 別ディスプレイ
 alt-b = 'workspace B' # Browser
 alt-t = 'workspace T' # Terminal
 alt-c = 'workspace C' # Chat
+alt-o = 'workspace O' # Others
 alt-shift-1 = 'move-node-to-workspace 1' # 別ディスプレイ
 alt-shift-b = 'move-node-to-workspace B' # Browser
 alt-shift-t = 'move-node-to-workspace T' # Terminal
 alt-shift-c = 'move-node-to-workspace C' # Chat
+alt-shift-o = 'move-node-to-workspace O' # Others
 
 # モニターの移動
 alt-tab = 'workspace-back-and-forth' # 一つ前のワークスペースに移動
