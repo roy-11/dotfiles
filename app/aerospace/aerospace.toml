@@ -1,0 +1,97 @@
+after-login-command = []
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+accordion-padding = 30
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+key-mapping.preset = 'qwerty'
+
+# フォーカスを移動した際にマウスをwindowの中央に移動
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = "move-mouse window-lazy-center"
+
+# アプリ起動時に指定のワークスペースに移動
+# id: aerospace list-apps
+## ターミナル
+[[on-window-detected]]
+if.app-id = 'net.kovidgoyal.kitty' # kitty
+run = "move-node-to-workspace T"
+
+## ブラウザ
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser' # Arc
+run = "move-node-to-workspace B"
+
+## チャット
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap' # Slack
+run = "move-node-to-workspace C"
+
+[gaps]
+inner.horizontal = 10
+inner.vertical =   10
+outer.left =       10
+outer.bottom =     10
+outer.top =        10
+outer.right =      10
+
+# ワークスペースのモニタ割り当て
+[workspace-to-monitor-force-assignment]
+B = ['secondary'] # or 2 , '^(?!.*Built-in).*$'
+T = ['secondary']
+C = ['secondary']
+
+[mode.main.binding]
+# レイアウト
+alt-ctrl-t = 'layout tiles horizontal vertical'
+alt-ctrl-a = 'layout accordion horizontal vertical'
+
+# フォーカスの移動
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+alt-f = 'fullscreen'
+
+# Windowの移動
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# ワークスペースの設定
+alt-1 = 'workspace 1' # 別ディスプレイ
+alt-b = 'workspace B' # Browser
+alt-t = 'workspace T' # Terminal
+alt-c = 'workspace C' # Chat
+alt-shift-1 = 'move-node-to-workspace 1' # 別ディスプレイ
+alt-shift-b = 'move-node-to-workspace B' # Browser
+alt-shift-t = 'move-node-to-workspace T' # Terminal
+alt-shift-c = 'move-node-to-workspace C' # Chat
+
+# モニターの移動
+alt-tab = 'workspace-back-and-forth' # 一つ前のワークスペースに移動
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next' # 別のモニタにワークスペースを移動
+
+# モード変更
+alt-r = 'mode resize'
+alt-s = 'mode service'
+
+[mode.service.binding]
+r = ['flatten-workspace-tree', 'mode main'] # ワークスペースのリセット
+f = ['layout floating tiling', 'mode main'] # フローティングモードに変更
+s = ['reload-config', 'mode main']
+h = ['join-with left', 'mode main']
+j = ['join-with down', 'mode main']
+k = ['join-with up', 'mode main']
+l = ['join-with right', 'mode main']
+esc = ['mode main']
+
+# リサイズモード
+[mode.resize.binding]
+h = 'resize width -50'
+j = 'resize height +50'
+k = 'resize height -50'
+l = 'resize width +50'
+esc = 'mode main'

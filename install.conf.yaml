@@ -56,6 +56,9 @@
     ~/.config/yabai:
       create: true
       path: app/yabai
+    ~/.config/aerospace:
+      create: true
+      path: app/aerospace
     ~/.config/skhd:
       create: true
       path: app/skhd

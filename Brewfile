@@ -11,6 +11,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jorgerojas26/lazysql"
 tap "koekeishiya/formulae"
+tap "nikitabobko/tap"
 tap "oven-sh/bun"
 # Run your GitHub Actions locally
 brew "act"
@@ -199,6 +200,8 @@ brew "koekeishiya/formulae/yabai"
 brew "oven-sh/bun/bun"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
 # Application launcher and productivity software
 cask "alfred"
 # Enable Windows-like alt-tab

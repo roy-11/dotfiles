@@ -49,11 +49,12 @@ defaults write com.apple.screencapture type jpg # デフォルトのpngからjpg
 
 # *その他
 defaults write com.apple.PowerChime ChimeOnNoHardware -bool true # 充電時の音をミュートにする
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO # ウインドウアニメーションを無効にする
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false # ウインドウアニメーションを無効にする
 defaults write -g NSWindowResizeTime 0.001 # ウィンドウのサイズ変更を早くする 
 defaults write -g NSScrollAnimationEnabled -bool false # カーソルホバー時のツールチップ情報の表示を早くする
 defaults write com.apple.dashboard mcx-disabled -boolean true # ダッシュボード機能（時計・天気などガジェット表示）を無効にする
 defaults write com.apple.PowerChime ChimeOnNoHardware -bool true # 充電時の音をミュートにする
+defaults write -g NSWindowShouldDragOnGesture -bool true # ctrl + cmdを押してウィンドウを移動(aerospace)
 
 # 手動実行
 # sudo nvram StartupMute=%01 起動音をミュートにする

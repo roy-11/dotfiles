@@ -154,6 +154,7 @@
                             }
                         ]
                     },
+ 
                     {
                         "description": "Change Fn + h/j/k/l to Arrows",
                         "manipulators": [
@@ -291,7 +292,7 @@
                         ]
                     },
                     {
-                        "description": "操作スペースの移動(ctrl + comma,period)",
+                        "description": "操作スペースの移動(ctrl + comma,period) かつyabaiを使用した遷移に変更",
                         "manipulators": [
                             {
                                 "from": {
@@ -311,10 +312,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "control"
-                                        ]
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --focus prev"
                                     }
                                 ],
                                 "type": "basic"
@@ -337,10 +335,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "control"
-                                        ]
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --focus next"
                                     }
                                 ],
                                 "type": "basic"
@@ -514,6 +509,34 @@
                     "to": [
                         {
                             "key_code": "left_control"
+                        }
+                    ]
+                },
+                {
+                    "description": "Ctrl + LeftとCtrl + Rightをyabaiを使用した遷移に変更",
+                    "from": {
+                        "key_code": "left_arrow",
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "/opt/homebrew/bin/yabai -m space --focus prev"
+                        }
+                    ]
+                },
+                {
+                    "description": "Ctrl + LeftとCtrl + Rightをyabaiを使用した遷移に変更",
+                    "from": {
+                        "key_code": "right_arrow",
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "/opt/homebrew/bin/yabai -m space --focus next"
                         }
                     ]
                 }
