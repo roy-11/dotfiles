@@ -2002,7 +2002,7 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>UIElementRequiresHotkeys</key>
-	<true/>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>findMode_iTerm</key>
