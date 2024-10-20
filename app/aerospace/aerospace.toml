@@ -53,6 +53,14 @@ run = "move-node-to-workspace C"
 if.app-id = 'com.hnc.Discord' # Discord
 run = "move-node-to-workspace C"
 
+## お気に入り
+[[on-window-detected]]
+if.app-id = 'md.obsidian' # Obisidan
+run = "move-node-to-workspace F"
+[[on-window-detected]]
+if.app-id = 'com.openai.chat' # ChatGPT
+run = "move-node-to-workspace F"
+
 ## その他
 [[on-window-detected]]
 if.app-id = 'net.ankiweb.dtop' # Anki
@@ -67,12 +75,6 @@ run = "move-node-to-workspace O"
 ## 対象外
 [[on-window-detected]]
 if.app-id = 'com.apple.finder' # Finder
-run = "layout floating"
-[[on-window-detected]]
-if.app-id = 'md.obsidian' # Obisidan
-run = "layout floating"
-[[on-window-detected]]
-if.app-id = 'com.openai.chat' # ChatGPT
 run = "layout floating"
 [[on-window-detected]]
 if.app-id = 'com.macpaw.CleanMyMac4' # CleanMyMacX
@@ -101,6 +103,7 @@ B = ['secondary'] # or 2 , '^(?!.*Built-in).*$'
 T = ['secondary']
 C = ['secondary']
 O = ['secondary']
+F = ['secondary']
 
 [mode.main.binding]
 # レイアウト
@@ -112,7 +115,12 @@ alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
-alt-f = 'fullscreen'
+
+# 最大化・最小化・削除
+alt-m = 'fullscreen'
+alt-ctrl-m = 'macos-native-fullscreen'
+alt-shift-m = 'macos-native-minimize'
+alt-ctrl-c = 'close'
 
 # Windowの移動
 alt-shift-h = 'move left'
@@ -125,11 +133,13 @@ alt-1 = 'workspace 1' # 別ディスプレイ
 alt-b = 'workspace B' # Browser
 alt-t = 'workspace T' # Terminal
 alt-c = 'workspace C' # Chat
+alt-f = 'workspace F' # Favorite
 alt-o = 'workspace O' # Others
 alt-shift-1 = 'move-node-to-workspace 1' # 別ディスプレイ
 alt-shift-b = 'move-node-to-workspace B' # Browser
 alt-shift-t = 'move-node-to-workspace T' # Terminal
 alt-shift-c = 'move-node-to-workspace C' # Chat
+alt-shift-f = 'move-node-to-workspace F' # Favorite
 alt-shift-o = 'move-node-to-workspace O' # Others
 
 # モニターの移動
