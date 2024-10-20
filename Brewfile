@@ -216,6 +216,8 @@ cask "bettertouchtool"
 cask "brave-browser"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Hardware benchmarking utility
+cask "cinebench"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -250,6 +252,8 @@ cask "google-chrome"
 cask "google-drive"
 # Desktop automation application
 cask "hammerspoon"
+# Game launcher
+cask "heroic"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # Free and open-source media player
@@ -270,7 +274,7 @@ cask "kindle-previewer"
 cask "kitty"
 # App to manage software development and track bugs
 cask "linear-linear"
-# Web browser
+# Multi-platform web browser
 cask "microsoft-edge"
 # Remote desktop client
 cask "microsoft-remote-desktop"
