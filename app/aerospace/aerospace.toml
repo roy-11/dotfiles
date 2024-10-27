@@ -53,13 +53,13 @@ run = "move-node-to-workspace C"
 if.app-id = 'com.hnc.Discord' # Discord
 run = "move-node-to-workspace C"
 
-## お気に入り
+## ノート 
 [[on-window-detected]]
 if.app-id = 'md.obsidian' # Obisidan
-run = "move-node-to-workspace F"
+run = "move-node-to-workspace N"
 [[on-window-detected]]
 if.app-id = 'com.openai.chat' # ChatGPT
-run = "move-node-to-workspace F"
+run = "move-node-to-workspace N"
 
 ## その他
 [[on-window-detected]]
@@ -103,7 +103,7 @@ B = ['secondary'] # or 2 , '^(?!.*Built-in).*$'
 T = ['secondary']
 C = ['secondary']
 O = ['secondary']
-F = ['secondary']
+N = ['secondary']
 
 [mode.main.binding]
 # レイアウト
@@ -133,13 +133,13 @@ alt-1 = 'workspace 1' # 別ディスプレイ
 alt-b = 'workspace B' # Browser
 alt-t = 'workspace T' # Terminal
 alt-c = 'workspace C' # Chat
-alt-f = 'workspace F' # Favorite
+alt-n = 'workspace N' # Note
 alt-o = 'workspace O' # Others
 alt-shift-1 = 'move-node-to-workspace 1' # 別ディスプレイ
 alt-shift-b = 'move-node-to-workspace B' # Browser
 alt-shift-t = 'move-node-to-workspace T' # Terminal
 alt-shift-c = 'move-node-to-workspace C' # Chat
-alt-shift-f = 'move-node-to-workspace F' # Favorite
+alt-shift-n = 'move-node-to-workspace N' # Note
 alt-shift-o = 'move-node-to-workspace O' # Others
 
 # モニターの移動
