@@ -288,6 +288,8 @@ cask "multipass"
 cask "mysqlworkbench"
 # Calculator and converter application
 cask "numi"
+# Cloud gaming platform
+cask "nvidia-geforce-now"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Toolbox companion for QMK Firmware
@@ -324,8 +326,9 @@ mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
 mas "Goodnotes", id: 1444383602
-mas "iBar", id: 6443843900
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
 mas "MouseCatch", id: 1625127067
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
