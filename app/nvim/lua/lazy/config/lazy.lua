@@ -16,11 +16,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.linting.eslint" }, -- 追加：eslint
     { import = "lazyvim.plugins.extras.formatting.prettier" }, -- 追加：prettier
 
-    -- AI
-    { import = "lazyvim.plugins.extras.coding.copilot" }, -- 追加：copilot
-    { import = "lazyvim.plugins.extras.coding.copilot-chat" }, -- 追加：copilot-chat
-    { import = "lazyvim.plugins.extras.coding.codeium" }, -- 追加：codeium
-
     -- 言語
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
@@ -28,9 +23,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.docker" }, -- 追加： dokcer
     { import = "lazyvim.plugins.extras.lang.yaml" }, -- 追加：yaml
     { import = "lazyvim.plugins.extras.lang.git" }, -- 追加：git
+    { import = "lazyvim.plugins.extras.lang.markdown" }, -- 追加：markdown
 
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.util.dot" },
 
     -- import/override with your plugins
     { import = "plugins" },
