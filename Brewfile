@@ -322,8 +322,6 @@ cask "vagrant"
 cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
-# Create, manage, and run virtual machines
-cask "vmware-fusion"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "BetterSnapTool", id: 417375580
@@ -332,7 +330,6 @@ mas "Cursor Pro", id: 1447043133
 mas "Folder Peek", id: 1615988943
 mas "GarageBand", id: 682658836
 mas "Goodnotes", id: 1444383602
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "MouseCatch", id: 1625127067
