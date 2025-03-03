@@ -94,16 +94,19 @@ inner.horizontal = 10
 inner.vertical =   10
 outer.left =       10
 outer.bottom =     10
-outer.top =        [{ monitor.main = 20 }, { monitor."secondary" = 50 }, 20]
+outer.top =        [{ monitor.'^LG.*$' = 50 }, { monitor.'^BenQ.*$' = 50 } , { monitor.main = 20 },  20]
 outer.right =      10
 
 # ワークスペースのモニタ割り当て
 [workspace-to-monitor-force-assignment]
-B = ['secondary'] # or 2 , '^(?!.*Built-in).*$'
-T = ['secondary']
-C = ['secondary']
-O = ['secondary']
-N = ['secondary']
+# aerospace list-monitors
+# LG monitor '^LG.*$'
+# BenQ monitor '^BenQ.*$'
+B = ['^BenQ.*$'] # or 2 , '^(?!.*Built-in).*$'
+T = ['^LG.*$']
+C = ['^BenQ.*$']
+O = ['^BenQ.*$']
+N = ['^BenQ.*$']
 
 [mode.main.binding]
 # レイアウト
