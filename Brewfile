@@ -103,6 +103,8 @@ brew "pinentry"
 brew "gnupg"
 # Task is a task runner/build tool that aims to be simpler and easier to use
 brew "go-task"
+# Ping, but with a graph
+brew "gping"
 # Perceptual JPEG encoder
 brew "guetzli"
 # Post-modern modal text editor
@@ -155,6 +157,8 @@ brew "peco"
 brew "php"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
+# Modern API client that lives in your terminal
+brew "posting"
 # Python version management
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
@@ -292,6 +296,8 @@ cask "numi"
 cask "nvidia-geforce-now"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
 # Control your tools with a few keystrokes
