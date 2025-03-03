@@ -25,8 +25,12 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # C library implementing the SSH2 protocol
@@ -41,10 +45,6 @@ brew "gcc"
 brew "btop"
 # Vector graphics library with cross-device output support
 brew "cairo"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
@@ -57,8 +57,6 @@ brew "chafa"
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
-# Cryptographic recipes and primitives for Python
-brew "cryptography"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # USB programmer
@@ -161,6 +159,8 @@ brew "poppler"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # File browser
 brew "ranger"
 # Search tool like grep and The Silver Searcher
