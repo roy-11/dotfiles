@@ -11,9 +11,13 @@ return {
   { "folke/zen-mode.nvim" },
   {
     "andrewferrier/debugprint.nvim",
-    config = function()
-      require("debugprint").setup()
-    end,
+    opts = {
+      keymaps = {
+        normal = {
+          variable_below = "<leader>;",
+        },
+      },
+    },
   },
   { "thinca/vim-quickrun" },
   {

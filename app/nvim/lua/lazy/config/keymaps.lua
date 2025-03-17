@@ -35,13 +35,6 @@ map("n", "<leader><Space>", LazyVim.pick("auto", { root = false }), { desc = "Fi
 map("n", "<Space>rf", "<cmd>QuickRun<CR>", { desc = "run this file" })
 map("n", "<Space>ri", '<cmd>lua require("image").setup()<CR>', { desc = "show image" })
 
-map("n", "<leader>;", function()
-  return require("debugprint").debugprint({ variable = true })
-end, {
-  expr = true,
-  desc = "print a variable",
-})
-
 -- 検索
 map("n", "<leader>sq", "<cmd>Telescope quickfix<CR>", { desc = "quickfix" })
 map(
