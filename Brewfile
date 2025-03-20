@@ -39,8 +39,6 @@ brew "libssh2"
 brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
-# GNU compiler collection
-brew "gcc"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Vector graphics library with cross-device output support
@@ -57,8 +55,6 @@ brew "chafa"
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # USB programmer
 brew "dfu-util"
 # Text processing system for reStructuredText
@@ -81,6 +77,8 @@ brew "fish"
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # Disk usage analyzer with console interface written in Go
@@ -107,6 +105,8 @@ brew "go-task"
 brew "gping"
 # Perceptual JPEG encoder
 brew "guetzli"
+# Easy, fast, and beautiful database client for the terminal
+brew "harlequin"
 # Post-modern modal text editor
 brew "helix"
 # Uses CSS selectors to extract bits content from HTML files
@@ -123,8 +123,6 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Postgres C API library
-brew "libpq"
 # Powerful, lightweight programming language
 brew "lua"
 # Mac App Store command-line interface
