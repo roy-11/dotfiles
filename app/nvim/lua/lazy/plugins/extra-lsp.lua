@@ -32,19 +32,19 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
-      servers = {
-        -- GraphQL LSP設定
-        graphql = {
-          cmd = { "graphql-lsp", "server", "--method", "stream" },
-          filetypes = { "graphql" },
-        },
-
-        -- Prisma LSP設定
-        prisma = {
-          cmd = { "prisma-language-server", "--stdio" },
-          filetypes = { "prisma" },
-        },
-      },
+      -- servers = {
+      --   -- GraphQL LSP設定
+      --   graphql = {
+      --     cmd = { "graphql-lsp", "server", "--method", "stream" },
+      --     filetypes = { "graphql" },
+      --   },
+      --
+      --   -- Prisma LSP設定
+      --   prisma = {
+      --     cmd = { "prisma-language-server", "--stdio" },
+      --     filetypes = { "prisma" },
+      --   },
+      -- },
     },
   },
 }
