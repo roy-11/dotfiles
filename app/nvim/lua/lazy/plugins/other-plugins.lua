@@ -1,14 +1,11 @@
 return {
   { "szw/vim-maximizer" },
-  { "rafamadriz/friendly-snippets" },
   { "inkarkat/vim-ReplaceWithRegister" },
-  { "jose-elias-alvarez/typescript.nvim" },
   { "mg979/vim-visual-multi" },
   {
     "christoomey/vim-tmux-navigator",
     event = "BufReadPre", -- https://github.com/LazyVim/LazyVim/issues/1502 ファイルを一度開く必要あり
   },
-  { "folke/zen-mode.nvim" },
   {
     "andrewferrier/debugprint.nvim",
     opts = {
@@ -33,14 +30,14 @@ return {
   --     })
   --   end,
   -- },
-  {
-    "vhyrro/luarocks.nvim",
-    priority = 1001,
-    config = true,
-    opts = {
-      rocks = { "magick" },
-    },
-  },
+  -- {
+  --   "vhyrro/luarocks.nvim",
+  --   priority = 1001,
+  --   config = true,
+  --   opts = {
+  --     rocks = { "magick" },
+  --   },
+  -- },
   -- 確認中
   -- {
   --   "jellydn/hurl.nvim",
@@ -72,11 +69,11 @@ return {
   --     { "<leader>rh", ":HurlRunner<CR>", desc = "Hurl Runner", mode = "v" },
   --   },
   -- },
-  {
-    "3rd/image.nvim",
-    dependencies = { "luarocks.nvim" },
-    config = function()
-      -- require("image").setup() kitty以外でエラーが出ないよう必要に応じて実行
-    end,
-  },
+  -- {
+  --   "3rd/image.nvim",
+  --   dependencies = { "luarocks.nvim" },
+  --   config = function()
+  --     -- require("image").setup() kitty以外でエラーが出ないよう必要に応じて実行
+  --   end,
+  -- },
 }
