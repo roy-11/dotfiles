@@ -24,6 +24,10 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.yaml" }, -- 追加：yaml
     { import = "lazyvim.plugins.extras.lang.git" }, -- 追加：git
     { import = "lazyvim.plugins.extras.lang.markdown" }, -- 追加：markdown
+    { import = "lazyvim.plugins.extras.lang.python" }, -- 追加：python
+    { import = "lazyvim.plugins.extras.lang.toml" }, -- 追加：toml
+    { import = "lazyvim.plugins.extras.lang.sql" }, -- 追加：sql
+    { import = "lazyvim.plugins.extras.lang.prisma" }, -- 追加：prisma
 
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
