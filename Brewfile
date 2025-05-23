@@ -105,8 +105,6 @@ brew "go-task"
 brew "gping"
 # Perceptual JPEG encoder
 brew "guetzli"
-# Easy, fast, and beautiful database client for the terminal
-brew "harlequin"
 # Post-modern modal text editor
 brew "helix"
 # Uses CSS selectors to extract bits content from HTML files
@@ -123,6 +121,8 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Cross-platform TUI database management tool
+brew "lazysql"
 # Powerful, lightweight programming language
 brew "lua"
 # Mac App Store command-line interface
@@ -193,7 +193,6 @@ brew "dimentium/autoraise/autoraise"
 brew "felixkratz/formulae/sketchybar"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
-brew "jorgerojas26/lazysql/lazysql"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
@@ -216,6 +215,8 @@ cask "arc"
 cask "bettertouchtool"
 # Web browser focusing on privacy
 cask "brave-browser"
+# CD burning application
+cask "burn"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Hardware benchmarking utility
@@ -320,6 +321,8 @@ cask "vagrant"
 cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
+# Agentic IDE powered by AI Flow paradigm
+cask "windsurf"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "BetterSnapTool", id: 417375580
