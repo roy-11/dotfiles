@@ -277,6 +277,8 @@ cask "kindle-previewer"
 cask "kitty"
 # App to manage software development and track bugs
 cask "linear-linear"
+# Discover, download, and run local LLMs
+cask "lm-studio"
 # Multi-platform web browser
 cask "microsoft-edge"
 # Remote desktop client
