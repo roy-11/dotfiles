@@ -92,6 +92,9 @@
     ~/Taskfile.yml:
       create: true
       path: Taskfile.yml
+    ~/.aider.conf.yml:
+      create: true
+      path: app/aider/aider.conf.yml
 
 - shell:
     - command: ./setup_homebrew.sh

@@ -15,20 +15,28 @@ tap "nikitabobko/tap"
 tap "oven-sh/bun"
 # Run your GitHub Actions locally
 brew "act"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Color management engine supporting ICC profiles
-brew "little-cms2"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
-# New file format for still image compression
-brew "jpeg-xl"
-# Codec library for encoding and decoding AV1 video streams
-brew "aom"
+# Vector graphics library with cross-device output support
+brew "cairo"
 # C parser in Python
 brew "pycparser"
 # C Foreign Function Interface for Python
 brew "cffi"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# GNU compiler collection
+brew "gcc"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# AI pair programming in your terminal
+brew "aider"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Official Amazon AWS command-line interface
@@ -41,10 +49,6 @@ brew "bat"
 brew "bottom"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# Vector graphics library with cross-device output support
-brew "cairo"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # Library to render SVG files using Cairo
@@ -77,8 +81,6 @@ brew "fish"
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU compiler collection
-brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # Disk usage analyzer with console interface written in Go
@@ -147,6 +149,8 @@ brew "ninja"
 brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
 # High performance message passing library
 brew "open-mpi"
 # Simplistic interactive filtering tool
@@ -229,8 +233,6 @@ cask "cleanshot"
 cask "clion"
 # IDE for C, C++, PHP and Node.js
 cask "codelite"
-# Trains AIs to understand and translate texts
-cask "deepl"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
 # Voice and text chat software
@@ -299,6 +301,8 @@ cask "nvidia-geforce-now"
 cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
+# IDE for professional Python development
+cask "pycharm"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
 # Control your tools with a few keystrokes
