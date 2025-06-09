@@ -233,6 +233,8 @@ cask "cleanshot"
 cask "clion"
 # IDE for C, C++, PHP and Node.js
 cask "codelite"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
 # Voice and text chat software
