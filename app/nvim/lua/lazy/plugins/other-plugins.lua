@@ -3,10 +3,6 @@ return {
   { "inkarkat/vim-ReplaceWithRegister" },
   { "mg979/vim-visual-multi" },
   {
-    "christoomey/vim-tmux-navigator",
-    event = "BufReadPre", -- https://github.com/LazyVim/LazyVim/issues/1502 ファイルを一度開く必要あり
-  },
-  {
     "andrewferrier/debugprint.nvim",
     opts = {
       keymaps = {
@@ -17,6 +13,10 @@ return {
     },
   },
   { "thinca/vim-quickrun" },
+  -- {
+  --   "christoomey/vim-tmux-navigator",
+  --   event = "BufReadPre", -- https://github.com/LazyVim/LazyVim/issues/1502 ファイルを一度開く必要あり
+  -- },
   -- {
   --   "nvim-telescope/telescope-media-files.nvim",
   --   config = function()

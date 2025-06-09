@@ -22,10 +22,16 @@ map("n", "PP", '"0p', { desc = "paste the last y yunk" })
 map("n", "<Space><CR>", "O<ESC>", { desc = "create new line" })
 map("n", "<Space>o", "<C-O>", { desc = "back to previous line" })
 map("n", "<Space>cp", "<cmd>let @+=expand('%:p')<CR>", { desc = "copy file path" })
-map("n", "∂", ":m .-2<CR>==", { desc = "shift up one line" }) -- alt + kがyabaiとの競合で使用できないためalt + d
-map("v", "∂", ":m '<-2<CR>gv-gv", { desc = "shift up one line in visual" }) -- alt + kがyabaiとの競合で使用できないためalt + d
-map("n", "ƒ", ":m .+1<CR>==", { desc = "shift down one line" }) -- alt + jがyabaiとの競合で使用できないためalt + f
-map("v", "ƒ", ":m '>+1<CR>gv-gv", { desc = "shift down one line in visual" }) -- alt + jがyabaiとの競合で使用できないためalt + f
+
+-- shiit
+-- map("n", "<C-S-k>", ":m .-2<CR>==", { desc = "shift up one line", noremap = true, silent = false })
+-- map("v", "<Space><C-k>", ":m '<-2<CR>gv-gv", { desc = "shift up one line in visual" })
+-- map("n", "<Space><C-j>", ":m .+1<CR>==", { desc = "shift down one line" })
+-- map("v", "<Space><C-j>", ":m '>+1<CR>gv-gv", { desc = "shift down one line in visual" })
+
+-- multi-cursor
+map("n", "<C-k>", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<CR>", { desc = "create multi-cursor up" })
+map("n", "<C-j>", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<CR>", { desc = "create multi-cursor down" })
 
 ----------------------
 -- Plugin Keybinds
@@ -43,10 +49,6 @@ map(
   { desc = "multiline" }
 )
 
--- vim-tmux-navigatorとの競合のためCtrl-j,kは使用できないためalt + c,kに変更
--- 一行上下にマルチカーソルを作成
-map("n", "ç", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<CR>", { desc = "● Create multi-cursor up" })
-map("n", "√", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<CR>", { desc = "● Create multi-cursor down" })
 -- Image
 -- map("n", "<Space>ri", '<cmd>lua require("image").setup()<CR>', { desc = "show image" })
 -- map(
