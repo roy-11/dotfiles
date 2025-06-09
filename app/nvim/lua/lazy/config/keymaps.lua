@@ -42,12 +42,12 @@ map("n", "<Space>rf", "<cmd>QuickRun<CR>", { desc = "run this file" })
 
 -- 検索
 map("n", "<leader>sq", "<cmd>Telescope quickfix<CR>", { desc = "quickfix" })
-map(
-  "n",
-  "<leader>sl",
-  "<cmd>lua require('telescope.builtin').live_grep({ additional_args = function() return {'--multiline'} end })<CR>",
-  { desc = "multiline" }
-)
+-- map(
+--   "n",
+--   "<leader>sl",
+--   "<cmd>lua require('telescope.builtin').live_grep({ additional_args = function() return {'--multiline'} end })<CR>",
+--   { desc = "multiline" }
+-- )
 
 -- Image
 -- map("n", "<Space>ri", '<cmd>lua require("image").setup()<CR>', { desc = "show image" })
