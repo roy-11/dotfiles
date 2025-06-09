@@ -6,14 +6,47 @@ return {
     build = "make",
 
     opts = {
-      provider = "openai",
-      openai = {
-        endpoint = "https://api.openai.com/v1",
-        model = "gpt-4o",
-        timeout = 30000,
-        temperature = 0,
-        max_tokens = 8192,
+      provider = "copilot",
+      providers = {
+        copilot = {
+          extra_request_body = {
+            temperature = 0,
+            max_tokens = 8192,
+          },
+        },
       },
+
+      -- ollama setting (work)
+      -- provider = "ollama",
+      -- vendors = {
+      --   ollama = {
+      --     __inherited_from = "openai",
+      --     api_key_name = "",
+      --     endpoint = "http://127.0.0.1:11434/v1",
+      --     model = "gemma3:12b-it-qat",
+      --     disable_tools = true,
+      --   },
+      -- },
+
+      -- ollama setting (not work)
+      -- provider = "ollama",
+      -- ollama = {
+      --   endpoint = "http://127.0.0.1:11434",
+      --   model = "gemma3:12b-it-qat",
+      -- },
+      -- behaviour = {
+      --   --- ... existing behaviours
+      --   enable_cursor_planning_mode = true, -- enable cursor planning mode!
+      -- },
+
+      -- open ai setting
+      -- openai = {
+      --   endpoint = "https://api.openai.com/v1",
+      --   model = "gpt-4o",
+      --   timeout = 30000,
+      --   temperature = 0,
+      --   max_tokens = 8192,
+      -- },
       hints = { enabled = false },
       file_selector = {
         provider = "snacks",
