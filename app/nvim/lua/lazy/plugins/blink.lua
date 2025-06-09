@@ -3,7 +3,6 @@ return {
   lazy = true,
   dependencies = {
     {
-      "Exafunction/codeium.nvim",
       "saghen/blink.compat",
     },
   },
@@ -34,16 +33,8 @@ return {
       ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
     },
     sources = {
-      compat = { "codeium" },
-      default = { "avante_commands", "avante_mentions", "avante_files", "lsp", "path", "snippets", "buffer", "codeium" },
+      default = { "avante_commands", "avante_mentions", "avante_files", "lsp", "path", "snippets", "buffer" },
       providers = {
-        codeium = {
-          kind = "Codeium",
-          score_offset = 1001,
-          name = "Codeium",
-          module = "codeium.blink",
-          async = true,
-        },
         avante_commands = {
           name = "avante_commands",
           module = "blink.compat.source",
