@@ -1,12 +1,13 @@
 {
   "mcpServers": {
     "everything": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-everything"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-everything"],
       "command": "npx"
     },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git"]
+    }
   },
   "nativeMCPServers": {
     "mcphub": {
@@ -17,3 +18,4 @@
     }
   }
 }
+
