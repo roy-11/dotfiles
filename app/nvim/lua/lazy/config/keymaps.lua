@@ -18,7 +18,7 @@ end
 ---------------------
 
 map("n", "x", '"_x', { desc = "x but not register" })
-map("n", "PP", '"0p', { desc = "paste the last y yunk" })
+map("n", "P", '"0p', { desc = "paste the last y yunk" })
 map("n", "<Space><CR>", "O<ESC>", { desc = "create new line" })
 map("n", "<Space>o", "<C-O>", { desc = "back to previous line" })
 map("n", "<Space>cp", "<cmd>let @+=expand('%:p')<CR>", { desc = "copy file path" })
