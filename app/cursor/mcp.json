@@ -3,6 +3,19 @@
     "git": {
       "command": "uvx",
       "args": ["mcp-server-git"]
+    },
+    "claude_code": {
+      "args": ["mcp", "serve"],
+      "command": "npx",
+      "env": []
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "taskmaster-ai": {
+      "command": "npx",
+      "args": ["-y", "--package=task-master-ai", "task-master-ai"]
     }
   }
 }

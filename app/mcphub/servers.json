@@ -7,6 +7,15 @@
     "git": {
       "command": "uvx",
       "args": ["mcp-server-git"]
+    },
+    "claude_code": {
+      "args": ["mcp", "serve"],
+      "command": "/Users/hagiwararyosuke/.nodenv/shims/claude",
+      "env": []
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
     }
   },
   "nativeMCPServers": {
