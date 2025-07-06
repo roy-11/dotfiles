@@ -23,16 +23,6 @@ map("n", "<Space><CR>", "O<ESC>", { desc = "create new line" })
 map("n", "<Space>o", "<C-O>", { desc = "back to previous line" })
 map("n", "<Space>cp", "<cmd>let @+=expand('%:p')<CR>", { desc = "copy file path" })
 
--- shiit
--- map("n", "<C-S-k>", ":m .-2<CR>==", { desc = "shift up one line", noremap = true, silent = false })
--- map("v", "<Space><C-k>", ":m '<-2<CR>gv-gv", { desc = "shift up one line in visual" })
--- map("n", "<Space><C-j>", ":m .+1<CR>==", { desc = "shift down one line" })
--- map("v", "<Space><C-j>", ":m '>+1<CR>gv-gv", { desc = "shift down one line in visual" })
-
--- multi-cursor
-map("n", "<C-k>", "<cmd>call vm#commands#add_cursor_up(0, v:count1)<CR>", { desc = "create multi-cursor up" })
-map("n", "<C-j>", "<cmd>call vm#commands#add_cursor_down(0, v:count1)<CR>", { desc = "create multi-cursor down" })
-
 ----------------------
 -- Plugin Keybinds
 ----------------------
