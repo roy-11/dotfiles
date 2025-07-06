@@ -49,6 +49,20 @@
       force: true
       path: app/lazygit/config.yml
 
+    # ai
+    ~/.claude/settings.json:
+      create: true
+      path: app/claude/settings.json
+    ~/.claude/settings.local.json:
+      create: true
+      path: app/claude/settings.local.json
+    ~/.claude/CLAUDE.md:
+      create: true
+      path: app/claude/CLAUDE.md
+    ~/.aider.conf.yml:
+      create: true
+      path: app/aider/aider.conf.yml
+
     # others
     ~/.config/karabiner:
       create: true
@@ -92,9 +106,6 @@
     ~/Taskfile.yml:
       create: true
       path: Taskfile.yml
-    ~/.aider.conf.yml:
-      create: true
-      path: app/aider/aider.conf.yml
 
 - shell:
     - command: ./setup_homebrew.sh
