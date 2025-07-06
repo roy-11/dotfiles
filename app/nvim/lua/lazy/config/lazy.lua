@@ -29,6 +29,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.sql" }, -- 追加：sql
     { import = "lazyvim.plugins.extras.lang.prisma" }, -- 追加：prisma
 
+    -- Editor
+    { import = "lazyvim.plugins.extras.editor.inc-rename" },
+    { import = "lazyvim.plugins.extras.editor.dial" },
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.util.dot" },
