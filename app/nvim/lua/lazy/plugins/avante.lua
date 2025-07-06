@@ -6,15 +6,18 @@ return {
     build = "make",
 
     opts = {
+      system_prompt = function()
+        local hub = require("mcphub").get_hub_instance()
+        return hub and hub:get_active_servers_prompt() or ""
+      end,
+      -- Using function prevents requiring mcphub before it's loaded
+      custom_tools = function()
+        return {
+          require("mcphub.extensions.avante").mcp_tool(),
+        }
+      end,
+
       provider = "copilot",
-      providers = {
-        copilot = {
-          extra_request_body = {
-            temperature = 0,
-            max_tokens = 8192,
-          },
-        },
-      },
 
       -- ollama setting (work)
       -- provider = "ollama",
@@ -47,6 +50,10 @@ return {
       --   temperature = 0,
       --   max_tokens = 8192,
       -- },
+
+      behaviour = {
+        enable_cursor_planning_mode = true,
+      },
       hints = { enabled = false },
       file_selector = {
         provider = "snacks",

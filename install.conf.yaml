@@ -65,6 +65,9 @@
     ~/.aider.conf.yml:
       create: true
       path: app/aider/aider.conf.yml
+    ~/.config/mcphub/servers.json:
+      create: true
+      path: app/mcphub/servers.json
 
     # others
     ~/.config/karabiner:
