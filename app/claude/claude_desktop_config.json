@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "claude_code": {
+      "command": "~/.nodenv/shims/claude",
+      "args": ["mcp", "serve"],
+      "env": {}
+    },
+    "anki": {
+      "command": "~/.nodenv/shims/npx",
+      "args": ["--yes", "anki-mcp-server"]
+    },
+    "mcp-obsidian": {
+      "command": "~/.nodenv/shims/npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "mcp-obsidian",
+        "--config",
+        "{\"vaultPath\":\"~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian Vault\"}"
+      ]
+    }
+  },
+  "isUsingBuiltInNodeForMcp": false
+}
