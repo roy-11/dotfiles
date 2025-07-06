@@ -68,6 +68,9 @@
     ~/.config/mcphub/servers.json:
       create: true
       path: app/mcphub/servers.json
+    ~/.cursor/mcp.json:
+      create: true
+      path: app/cursor/mcp.json
 
     # others
     ~/.config/karabiner:
