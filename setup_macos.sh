@@ -55,6 +55,7 @@ defaults write -g NSScrollAnimationEnabled -bool false # カーソルホバー�
 defaults write com.apple.dashboard mcx-disabled -boolean true # ダッシュボード機能（時計・天気などガジェット表示）を無効にする
 defaults write com.apple.PowerChime ChimeOnNoHardware -bool true # 充電時の音をミュートにする
 defaults write -g NSWindowShouldDragOnGesture -bool true # ctrl + cmdを押してウィンドウを移動(aerospace)
+defaults write com.apple.spaces spans-displays -bool false # aerospaceで問題があるため（https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces)
 
 # 手動実行
 # sudo nvram StartupMute=%01 起動音をミュートにする
