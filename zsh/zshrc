@@ -10,3 +10,7 @@ eval "$(nodenv init -)"
 
 # pyenv setup_pythonで必要
 eval "$(pyenv init -)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.lmstudio/bin"
+# End of LM Studio CLI section
