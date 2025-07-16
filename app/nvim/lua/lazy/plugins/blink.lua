@@ -4,6 +4,7 @@ return {
   dependencies = {
     {
       "saghen/blink.compat",
+      -- "Kaiser-Yang/blink-cmp-avante",
     },
   },
 
@@ -33,26 +34,31 @@ return {
       ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
     },
     sources = {
-      default = { "avante_commands", "avante_mentions", "avante_files", "lsp", "path", "snippets", "buffer" },
+      default = { "lsp", "path", "snippets", "buffer" },
+      -- default = { "avante_commands", "avante_mentions", "avante_files", "lsp", "path", "snippets", "buffer" },
       providers = {
-        avante_commands = {
-          name = "avante_commands",
-          module = "blink.compat.source",
-          score_offset = 90, -- show at a higher priority than lsp
-          opts = {},
-        },
-        avante_files = {
-          name = "avante_files",
-          module = "blink.compat.source",
-          score_offset = 100, -- show at a higher priority than lsp
-          opts = {},
-        },
-        avante_mentions = {
-          name = "avante_mentions",
-          module = "blink.compat.source",
-          score_offset = 1000, -- show at a higher priority than lsp
-          opts = {},
-        },
+        -- avante = {
+        --   module = "blink-cmp-avante",
+        --   name = "Avante",
+        -- },
+        -- avante_commands = {
+        --   name = "avante_commands",
+        --   module = "blink.compat.source",
+        --   score_offset = 90, -- show at a higher priority than lsp
+        --   opts = {},
+        -- },
+        -- avante_files = {
+        --   name = "avante_files",
+        --   module = "blink.compat.source",
+        --   score_offset = 100, -- show at a higher priority than lsp
+        --   opts = {},
+        -- },
+        -- avante_mentions = {
+        --   name = "avante_mentions",
+        --   module = "blink.compat.source",
+        --   score_offset = 1000, -- show at a higher priority than lsp
+        --   opts = {},
+        -- },
       },
     },
   },
