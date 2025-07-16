@@ -1,11 +1,10 @@
 {
   "mcpServers": {
-    "claude_code": {
-      "command": "~/.nodenv/shims/claude",
-      "args": ["mcp", "serve"],
-      "env": {}
-    "Framelink Figma MCP": {
+    "sequential-thinking": {
       "command": "~/.nodenv/shims/npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "Framelink Figma MCP": {
       "args": [
         "-y",
         "figma-developer-mcp",

@@ -8,6 +8,13 @@
         "--stdio"
       ]
     },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": {
+        "DISABLE_THOUGHT_LOGGING": true
+      }
+    },
     "git": {
       "command": "uvx",
       "args": ["mcp-server-git"]
