@@ -4,6 +4,13 @@
       "command": "~/.nodenv/shims/claude",
       "args": ["mcp", "serve"],
       "env": {}
+    "Framelink Figma MCP": {
+      "command": "~/.nodenv/shims/npx",
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--stdio"
+      ]
     },
     "anki": {
       "command": "~/.nodenv/shims/npx",
