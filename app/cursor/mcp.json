@@ -20,17 +20,31 @@
       "args": ["mcp-server-git"]
     },
     "claude_code": {
+      "command": "claude",
       "args": ["mcp", "serve"],
-      "command": "npx",
       "env": []
     },
     "context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp"]
     },
-    "taskmaster-ai": {
+    "playwright": {
       "command": "npx",
-      "args": ["-y", "--package=task-master-ai", "task-master-ai"]
+      "args": ["@playwright/mcp@latest"]
+    },
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant"
+      ]
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
     }
   }
 }

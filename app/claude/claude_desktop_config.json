@@ -5,6 +5,7 @@
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     },
     "Framelink Figma MCP": {
+      "command": "~/.nodenv/shims/npx",
       "args": [
         "-y",
         "figma-developer-mcp",
@@ -50,6 +51,26 @@
     "context7": {
       "command": "~/.nodenv/shims/npx",
       "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "serena": {
+      "command": "~/.local/bin/uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server"
+      ]
+    },
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
     }
   },
   "isUsingBuiltInNodeForMcp": false
