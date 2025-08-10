@@ -147,7 +147,7 @@ brew "neovim-remote"
 brew "ninja"
 # Install NodeJS versions
 brew "node-build"
-# Manage multiple NodeJS versions
+# Node.js version manager
 brew "nodenv"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
@@ -187,6 +187,8 @@ brew "tldr"
 brew "tmux"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Library to create, extract, and modify Windows Imaging files
+brew "wimlib"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
 # Switch your input method through terminal
@@ -225,6 +227,8 @@ cask "burn"
 cask "chatgpt"
 # Hardware benchmarking utility
 cask "cinebench"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -240,13 +244,15 @@ cask "devtoys"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Productivity app
 cask "dropzone"
 # App for note taking, organising, task lists, and archiving
 cask "evernote"
 # Web browser
 cask "firefox"
+# Web browser
+cask "firefox@developer-edition"
 cask "font-hack-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-ricty-diminished"
@@ -277,14 +283,22 @@ cask "karabiner-elements"
 cask "kindle"
 # Preview and audit Kindle eBooks
 cask "kindle-previewer"
+# Agent-centric IDE with spec-driven development
+cask "kiro"
 # GPU-based terminal emulator
 cask "kitty"
+# Open source code editor written in Rust
+cask "lapce"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Multi-platform web browser
 cask "microsoft-edge"
+# Spreadsheet software
+cask "microsoft-excel"
 # Remote desktop client
 cask "microsoft-remote-desktop"
 # Interactive tool for analyzing MongoDB data
@@ -309,6 +323,8 @@ cask "pycharm"
 cask "qmk-toolbox"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Modified browser that helps in responsive web development
+cask "responsively"
 # MongoDB management tool
 cask "robo-3t"
 # Tool that provides consistent, highly configurable symbols for apps
@@ -329,8 +345,12 @@ cask "vagrant"
 cask "vagrant-vmware-utility"
 # Open-source code editor
 cask "visual-studio-code"
+# Web browser with built-in email client focusing on customization and control
+cask "vivaldi"
 # Agentic IDE powered by AI Flow paradigm
 cask "windsurf"
+# Gecko based web browser
+cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "BetterSnapTool", id: 417375580
