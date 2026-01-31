@@ -71,7 +71,7 @@ brew "fd"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
@@ -99,7 +99,7 @@ brew "gnu-sed"
 brew "libassuan"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Task is a task runner/build tool that aims to be simpler and easier to use
 brew "go-task"
@@ -113,7 +113,7 @@ brew "helix"
 brew "htmlq"
 # Run and Test HTTP Requests with plain text and curl
 brew "hurl"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Command-line pager for JSON data
 brew "jless"
@@ -177,6 +177,8 @@ brew "shellcheck"
 brew "six"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale", restart_service: :changed
 # Tool to build, change, and version infrastructure
 brew "terraform"
 # Programmatically correct mistyped console commands
@@ -208,7 +210,7 @@ brew "oven-sh/bun/bun"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
+cask "nikitabobko/tap/aerospace"
 # Application launcher and productivity software
 cask "alfred"
 # Enable Windows-like alt-tab
@@ -217,6 +219,8 @@ cask "alt-tab"
 cask "anki"
 # Chromium based browser
 cask "arc"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
 # Web browser focusing on privacy
@@ -225,6 +229,8 @@ cask "brave-browser"
 cask "burn"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# OpenAI's official browser with ChatGPT built in
+cask "chatgpt-atlas"
 # Hardware benchmarking utility
 cask "cinebench"
 # Anthropic's official Claude AI desktop app
@@ -237,6 +243,8 @@ cask "cleanshot"
 cask "clion"
 # IDE for C, C++, PHP and Node.js
 cask "codelite"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Utilities designed to make common development tasks easier
@@ -293,6 +301,8 @@ cask "lapce"
 cask "linear-linear"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Multi-platform web browser
@@ -309,6 +319,8 @@ cask "monitorcontrol"
 cask "multipass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
+# AI-powered translator
+cask "nani"
 # Calculator and converter application
 cask "numi"
 # Cloud gaming platform
@@ -327,6 +339,8 @@ cask "raycast"
 cask "responsively"
 # MongoDB management tool
 cask "robo-3t"
+# Open source virtual/remote desktop application
+cask "rustdesk"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Team communication and collaboration software
@@ -365,3 +379,5 @@ mas "MouseCatch", id: 1625127067
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Yoink", id: 457622435
+cargo "stylua"
+cargo "ttyper"
